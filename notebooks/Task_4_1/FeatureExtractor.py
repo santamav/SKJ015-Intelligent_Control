@@ -1,8 +1,6 @@
 import rclpy
 from rclpy.node import Node
-import VSM_PBVS as pbvs
 from std_msgs.msg import Float64
-import numpy as np
 
 from machinevisiontoolbox.base import *
 from machinevisiontoolbox import *
@@ -11,59 +9,35 @@ from spatialmath import *
 
 class PBVS_FeatureNode(Node):
 
-    def __init__(self, camera, p, pose_g=None):
+    def __init__(self): #, camera, p, pose_g=None):
         super().__init__('pbvs_feature_node')
+        self.declare_parameter('featureParams', [[1, 1, -2], [2, 0.5], [-1, -1, 2]])
         self.publisher_ = self.create_publisher(Float64, 'feature_data', 10)
         
-        self.camera = camera
-        self.P = p
-        self.pose_g = pose_g
+        featureParams = self.get_parameter('featureParams').get_parameter_value().float_array_value
+        self.camera = CentralCamera.Default(pose = SE3.Trans(featureParams[0][0], featureParams[0][1], featureParams[0][2]))
+        self.P = mkgrid(featureParams[1][0], featureParams[1][1])
+        self.pose_g = SE3.Trans(featureParams[2][0], featureParams[2][1], featureParams[2][2])
 
-
-    def compute_pose(self):
+        # comute pose
         self.uv = self.camera.project_point(self.P, objpose=self.pose_g)
-        Te_C_G = self.camera.estpose(self.P, self.uv, frame="camera")
+        Te_C_G = self.camera.estpose(self.P, self.uv, frame="camera") 
         
-        msg = Float64()
-        msg.data = Te_C_G
-        self.publisher_.publish(msg)
-        
-class PBVS_ControllerNode(Node):
-    def __init__(self, eterm=0, lmbda=0.05):
-        super().__init__('pbvs_controller_node')
-        self.subscription = self.create_subscription(
-            Float64,
-            'feature_data',
-            self.compute_TDelta,
-            10
-        )
-        self.publisher_ = self.create_publisher(Float64, 'controller_data', 10)
-        
-        self.lmbda = lmbda
-        self.eterm = eterm
-        self.pose_d = SE3(0, 0, 1)
-        
-    def compute_TDelta(self, Te_C_G):
-        T_delta = Te_C_G * self.pose_d.inv()
-        
-        msg = Float64()
-        msg.data = T_delta
+        # Convert spatial math pose to ROS Pose message
+        msg = Float64() # no es un float definir un custom message
+        msg.position.x = Te_C_G.t[0]
+        msg.position.y = Te_C_G.t[1]
+        msg.position.z = Te_C_G.t[2]
+        #msg.data = Te_C_G
         self.publisher_.publish(msg)
         
         
-class PBVS_ActuatorNode(Node):
-    def __init__(self, camera, lmbda=0.05):
-        super().__init__('pbvs_actuator_node')
-        self.subscription = self.create_subscription(
-            Float64,
-            'controller_data',
-            self.apply_velocity,
-            10
-        )
-        
-        self.camera = camera
-        self.lmbda = lmbda
-        
-    def apply_velocity(self, T_delta):
-        Td = T_delta.interp1(self.lmbda)  
-        self.camera.pose @= Td
+def main(args=None):
+    rclpy.init(args=args)
+    PBVS_feature_node = PBVS_FeatureNode()
+    rclpy.spin(PBVS_feature_node)
+    PBVS_feature_node.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
