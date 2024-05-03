@@ -6,7 +6,6 @@ from spatialmath import *
 
 cameraParams = [1, 1, -2]
 #camera = CentralCamera.Default(pose = SE3.Trans(1, 1, -2))
-camera = CentralCamera.Default(pose = SE3.Trans(1, 1, -2))
 
 #4 points-goal
 Pparams = [2, 0.5]

@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float64
+from std_msgs.msg import Float64MultiArray
 import numpy as np
 
 from machinevisiontoolbox.base import *
@@ -14,7 +15,7 @@ class PBVS_ActuatorNode(Node):
         super().__init__('pbvs_actuator_node')
         self.declare_parameter('actuatorParams', [1, 1, -2])
         self.subscription = self.create_subscription(
-            Float64,
+            Float64MultiArray,
             'controller_data',
             self.apply_velocity,
             10
@@ -27,6 +28,7 @@ class PBVS_ActuatorNode(Node):
         self.subscription  # prevent unused variable warning
         
     def apply_velocity(self, T_delta): # T_delta is the received message no es un float
+        T_delta = SE3(np.array(T_delta)) # convert to numpy array and then to a spatial math pose
         Td = T_delta.interp1(self.lmbda)  
         self.camera.pose @= Td
         

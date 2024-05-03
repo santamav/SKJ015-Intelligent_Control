@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float64
+from std_msgs.msg import Float64MultiArray
 import numpy as np
 
 from machinevisiontoolbox.base import *
@@ -14,7 +15,7 @@ class PBVS_ControllerNode(Node):
         super().__init__('pbvs_controller_node')
         self.declare_parameter('controllerParams', [0, 0, 1])
         self.subscription = self.create_subscription(
-            Float64,
+            Float64MultiArray,
             'feature_data',
             self.compute_TDelta,
             10
@@ -28,9 +29,11 @@ class PBVS_ControllerNode(Node):
         
         self.subscription  # prevent unused variable warning
         
-    def compute_TDelta(self, Te_C_G ): # Te_C_G is the received message no es un float
+    def compute_TDelta(self, Te_C_G ):
+        Te_C_G = SE3(np.array(Te_C_G)) # convert to numpy array and then to a spatial math pose
         T_delta = Te_C_G * self.pose_d.inv()
-        msg = Float64()
+        T_delta = T_delta.A.tolist # convert to numpy array and then to list
+        msg = Float64MultiArray() 
         msg.data = T_delta
         self.publisher_.publish(msg)
         

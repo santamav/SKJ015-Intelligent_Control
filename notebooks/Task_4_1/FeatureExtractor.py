@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float64
+from std_msgs.msg import Float64MultiArray
 
 from machinevisiontoolbox.base import *
 from machinevisiontoolbox import *
@@ -12,7 +13,7 @@ class PBVS_FeatureNode(Node):
     def __init__(self): #, camera, p, pose_g=None):
         super().__init__('pbvs_feature_node')
         self.declare_parameter('featureParams', [[1, 1, -2], [2, 0.5], [-1, -1, 2]])
-        self.publisher_ = self.create_publisher(Float64, 'feature_data', 10)
+        self.publisher_ = self.create_publisher(Float64MultiArray, 'feature_data', 10)
         
         featureParams = self.get_parameter('featureParams').get_parameter_value().float_array_value
         self.camera = CentralCamera.Default(pose = SE3.Trans(featureParams[0][0], featureParams[0][1], featureParams[0][2]))
@@ -22,13 +23,9 @@ class PBVS_FeatureNode(Node):
         # comute pose
         self.uv = self.camera.project_point(self.P, objpose=self.pose_g)
         Te_C_G = self.camera.estpose(self.P, self.uv, frame="camera") 
-        
-        # Convert spatial math pose to ROS Pose message
-        msg = Float64() # no es un float definir un custom message
-        msg.position.x = Te_C_G.t[0]
-        msg.position.y = Te_C_G.t[1]
-        msg.position.z = Te_C_G.t[2]
-        #msg.data = Te_C_G
+        Te_C_G = Te_C_G.A.tolist # convert to numpy array and then to list
+        msg = Float64MultiArray() 
+        msg.data = Te_C_G
         self.publisher_.publish(msg)
         
         
