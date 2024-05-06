@@ -1,0 +1,34 @@
+[0.494s] Invoking command in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/comm_package_test': PYTHONPATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/prefix_override:/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/comm_package_test build --build-base /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/build install --record /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/install.log --single-version-externally-managed install_data
+[0.676s] running egg_info
+[0.677s] creating ../../build/comm_package_test/comm_package_test.egg-info
+[0.680s] writing ../../build/comm_package_test/comm_package_test.egg-info/PKG-INFO
+[0.680s] writing dependency_links to ../../build/comm_package_test/comm_package_test.egg-info/dependency_links.txt
+[0.681s] writing entry points to ../../build/comm_package_test/comm_package_test.egg-info/entry_points.txt
+[0.681s] writing requirements to ../../build/comm_package_test/comm_package_test.egg-info/requires.txt
+[0.681s] writing top-level names to ../../build/comm_package_test/comm_package_test.egg-info/top_level.txt
+[0.681s] writing manifest file '../../build/comm_package_test/comm_package_test.egg-info/SOURCES.txt'
+[0.682s] reading manifest file '../../build/comm_package_test/comm_package_test.egg-info/SOURCES.txt'
+[0.683s] adding license file 'LICENSE'
+[0.683s] writing manifest file '../../build/comm_package_test/comm_package_test.egg-info/SOURCES.txt'
+[0.683s] running build
+[0.683s] running build_py
+[0.684s] creating /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/build
+[0.684s] creating /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/build/lib
+[0.684s] creating /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/build/lib/comm_package_test
+[0.684s] copying comm_package_test/__init__.py -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/build/lib/comm_package_test
+[0.684s] running install
+[0.685s] running install_lib
+[0.685s] creating /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test/lib/python3.10/site-packages/comm_package_test
+[0.685s] copying /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/build/lib/comm_package_test/__init__.py -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test/lib/python3.10/site-packages/comm_package_test
+[0.686s] byte-compiling /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test/lib/python3.10/site-packages/comm_package_test/__init__.py to __init__.cpython-310.pyc
+[0.686s] running install_data
+[0.686s] creating /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test/share/ament_index
+[0.686s] creating /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test/share/ament_index/resource_index
+[0.686s] creating /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test/share/ament_index/resource_index/packages
+[0.686s] copying resource/comm_package_test -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test/share/ament_index/resource_index/packages
+[0.687s] copying package.xml -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test/share/comm_package_test
+[0.687s] running install_egg_info
+[0.688s] Copying ../../build/comm_package_test/comm_package_test.egg-info to /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test/lib/python3.10/site-packages/comm_package_test-0.0.0-py3.10.egg-info
+[0.689s] running install_scripts
+[0.703s] writing list of installed files to '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/install.log'
+[0.719s] Invoked command in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/comm_package_test' returned '0': PYTHONPATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/prefix_override:/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/comm_package_test build --build-base /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/build install --record /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/install.log --single-version-externally-managed install_data

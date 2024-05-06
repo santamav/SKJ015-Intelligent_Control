@@ -32,7 +32,7 @@ class PBVS_ControllerNode(Node):
     def compute_TDelta(self, Te_C_G ):
         Te_C_G = SE3(np.array(Te_C_G)) # convert to numpy array and then to a spatial math pose
         T_delta = Te_C_G * self.pose_d.inv()
-        T_delta = T_delta.A.tolist # convert to numpy array and then to list
+        T_delta = T_delta.A.flatten().tolist # convert to numpy array and then to list
         msg = Float64MultiArray() 
         msg.data = T_delta
         self.publisher_.publish(msg)
