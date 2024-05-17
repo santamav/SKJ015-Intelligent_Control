@@ -8,12 +8,12 @@ from machinevisiontoolbox.base import *
 from machinevisiontoolbox import *
 from spatialmath.base import *
 from spatialmath import *
-
+import numpy as np
         
 class PBVS_ControllerNode(Node):
     def __init__(self):
         super().__init__('pbvs_controller_node')
-        self.declare_parameter('controllerParams', [0., 0., 1.])
+        
         self.subscription = self.create_subscription(
             Float64MultiArray,
             'feature_data',
@@ -22,20 +22,24 @@ class PBVS_ControllerNode(Node):
         )
         self.publisher_ = self.create_publisher(Float64, 'controller_data', 10)
         
-        controllerParams = self.get_parameter('controllerParams').get_parameter_value().float_array_value
         self.lmbda = 0
         self.eterm = 0.05
-        self.pose_d = SE3(controllerParams[0], controllerParams[1], controllerParams[2])
+        self.pose_d = SE3.Tz(1)
         
         self.subscription  # prevent unused variable warning
         
-    def compute_TDelta(self, Te_C_G ):
-        Te_C_G = SE3(np.array(Te_C_G)) # convert to numpy array and then to a spatial math pose
+    def compute_TDelta(self, msg ):
+        # Reshape data to 4x4 matrix
+        self.get_logger().info(f'Publishing: {msg.data}')
+        data = np.array(msg.data).reshape(4,4)
+        
+        Te_C_G = SE3(data) # convert to numpy array and then to a spatial math pose
         T_delta = Te_C_G * self.pose_d.inv()
-        T_delta = T_delta.A.tolist # convert to numpy array and then to list
+        T_delta = T_delta.A.flatten().tolist # convert to numpy array and then to list
         msg = Float64MultiArray() 
         msg.data = T_delta
         self.publisher_.publish(msg)
+
         
 def main(args=None):
     rclpy.init(args=args)
