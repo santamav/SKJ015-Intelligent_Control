@@ -1,0 +1,27 @@
+[1.159s] Invoking command in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/pbvs_package': PYTHONPATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/prefix_override:/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pbvs_package build --build-base /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/build install --record /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/install.log --single-version-externally-managed install_data
+[1.597s] running egg_info
+[1.597s] writing ../../build/pbvs_package/pbvs_package.egg-info/PKG-INFO
+[1.597s] writing dependency_links to ../../build/pbvs_package/pbvs_package.egg-info/dependency_links.txt
+[1.598s] writing entry points to ../../build/pbvs_package/pbvs_package.egg-info/entry_points.txt
+[1.598s] writing requirements to ../../build/pbvs_package/pbvs_package.egg-info/requires.txt
+[1.598s] writing top-level names to ../../build/pbvs_package/pbvs_package.egg-info/top_level.txt
+[1.598s] reading manifest file '../../build/pbvs_package/pbvs_package.egg-info/SOURCES.txt'
+[1.598s] adding license file 'LICENSE'
+[1.599s] writing manifest file '../../build/pbvs_package/pbvs_package.egg-info/SOURCES.txt'
+[1.599s] running build
+[1.599s] running build_py
+[1.599s] copying pbvs_package/controller.py -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/build/lib/pbvs_package
+[1.599s] running install
+[1.599s] running install_lib
+[1.599s] copying /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/build/lib/pbvs_package/controller.py -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/python3.10/site-packages/pbvs_package
+[1.599s] byte-compiling /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/python3.10/site-packages/pbvs_package/controller.py to controller.cpython-310.pyc
+[1.599s] running install_data
+[1.600s] running install_egg_info
+[1.606s] removing '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/python3.10/site-packages/pbvs_package-0.0.0-py3.10.egg-info' (and everything under it)
+[1.609s] Copying ../../build/pbvs_package/pbvs_package.egg-info to /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/python3.10/site-packages/pbvs_package-0.0.0-py3.10.egg-info
+[1.609s] running install_scripts
+[1.656s] Installing actuator_node script to /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/pbvs_package
+[1.657s] Installing controller_node script to /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/pbvs_package
+[1.657s] Installing feature_extraction_node script to /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/pbvs_package
+[1.659s] writing list of installed files to '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/install.log'
+[1.715s] Invoked command in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/pbvs_package' returned '0': PYTHONPATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/prefix_override:/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pbvs_package build --build-base /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/build install --record /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/install.log --single-version-externally-managed install_data

@@ -1,0 +1,537 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/.pytest_cache
+rootdir: /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/pbvs_package
+plugins: ament-copyright-0.12.10, ament-pep257-0.12.10, ament-xmllint-0.12.10, launch-testing-1.0.5, ament-lint-0.12.10, launch-testing-ros-0.19.7, ament-flake8-0.12.10, dash-2.16.1, cov-3.0.0, colcon-core-0.16.1
+[1mcollecting ... [0m[1m
+collected 3 items                                                              [0m
+
+test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m_________________________________ test_flake8 __________________________________[0m
+[1m[31mtest/test_flake8.py[0m:23: in test_flake8
+    [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[1m[31mE   AssertionError: Found 94 code style errors / warnings:[0m
+[1m[31mE     ./pbvs_package/launcher.py:4:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./pbvs_package/controller.py:7:1: F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names[0m
+[1m[31mE     ./pbvs_package/controller.py:8:1: F403 'from machinevisiontoolbox import *' used; unable to detect undefined names[0m
+[1m[31mE     ./pbvs_package/controller.py:9:1: F403 'from spatialmath.base import *' used; unable to detect undefined names[0m
+[1m[31mE     ./pbvs_package/controller.py:10:1: F403 'from spatialmath import *' used; unable to detect undefined names[0m
+[1m[31mE     ./pbvs_package/controller.py:11:1: F811 redefinition of unused 'np' from line 5[0m
+[1m[31mE     ./pbvs_package/controller.py:12:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/controller.py:13:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./pbvs_package/controller.py:16:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/controller.py:24:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/controller.py:27:23: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base[0m
+[1m[31mE     ./pbvs_package/controller.py:28:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/controller.py:30:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/controller.py:31:33: E202 whitespace before ')'[0m
+[1m[31mE     ./pbvs_package/controller.py:34:44: E231 missing whitespace after ','[0m
+[1m[31mE     ./pbvs_package/controller.py:35:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/controller.py:36:18: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base[0m
+[1m[31mE     ./pbvs_package/controller.py:36:27: E261 at least two spaces before inline comment[0m
+[1m[31mE     ./pbvs_package/controller.py:38:45: E261 at least two spaces before inline comment[0m
+[1m[31mE     ./pbvs_package/controller.py:39:34: W291 trailing whitespace[0m
+[1m[31mE     ./pbvs_package/controller.py:43:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/controller.py:51:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[1m[31mE     ./pbvs_package/controller.py:52:11: W292 no newline at end of file[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:3:1: F401 'std_msgs.msg.Float64' imported but unused[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:7:1: F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:8:1: F403 'from machinevisiontoolbox import *' used; unable to detect undefined names[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:9:1: F403 'from spatialmath.base import *' used; unable to detect undefined names[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:10:1: F403 'from spatialmath import *' used; unable to detect undefined names[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:12:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:14:24: E261 at least two spaces before inline comment[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:14:25: E262 inline comment should start with '# '[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:17:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:18:23: F405 'CentralCamera' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:18:49: E251 unexpected spaces around keyword / parameter equals[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:18:51: E251 unexpected spaces around keyword / parameter equals[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:18:52: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:19:18: F405 'mkgrid' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:20:23: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:21:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:28:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:30:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:33:40: E231 missing whitespace after ','[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:34:9: E265 block comment should start with '# '[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:37:28: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:38:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:42:70: W291 trailing whitespace[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:46:34: W291 trailing whitespace[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:51:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:52:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:59:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[1m[31mE     ./pbvs_package/FeatureExtractor.py:60:11: W292 no newline at end of file[0m
+[1m[31mE     ./pbvs_package/mainROS.py:2:1: F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names[0m
+[1m[31mE     ./pbvs_package/mainROS.py:2:1: F401 'machinevisiontoolbox.base.*' imported but unused[0m
+[1m[31mE     ./pbvs_package/mainROS.py:3:1: F403 'from machinevisiontoolbox import *' used; unable to detect undefined names[0m
+[1m[31mE     ./pbvs_package/mainROS.py:3:1: F401 'machinevisiontoolbox.*' imported but unused[0m
+[1m[31mE     ./pbvs_package/mainROS.py:4:1: F403 'from spatialmath.base import *' used; unable to detect undefined names[0m
+[1m[31mE     ./pbvs_package/mainROS.py:4:1: F401 'spatialmath.base.*' imported but unused[0m
+[1m[31mE     ./pbvs_package/mainROS.py:5:1: F403 'from spatialmath import *' used; unable to detect undefined names[0m
+[1m[31mE     ./pbvs_package/mainROS.py:5:1: F401 'spatialmath.*' imported but unused[0m
+[1m[31mE     ./pbvs_package/mainROS.py:8:1: E265 block comment should start with '# '[0m
+[1m[31mE     ./pbvs_package/mainROS.py:10:1: E265 block comment should start with '# '[0m
+[1m[31mE     ./pbvs_package/mainROS.py:12:1: E265 block comment should start with '# '[0m
+[1m[31mE     ./pbvs_package/mainROS.py:15:1: E265 block comment should start with '# '[0m
+[1m[31mE     ./pbvs_package/mainROS.py:17:19: E261 at least two spaces before inline comment[0m
+[1m[31mE     ./pbvs_package/mainROS.py:17:20: E262 inline comment should start with '# '[0m
+[1m[31mE     ./pbvs_package/mainROS.py:18:1: E265 block comment should start with '# '[0m
+[1m[31mE     ./pbvs_package/mainROS.py:20:8: E225 missing whitespace around operator[0m
+[1m[31mE     ./pbvs_package/mainROS.py:22:1: E265 block comment should start with '# '[0m
+[1m[31mE     ./pbvs_package/mainROS.py:23:1: E265 block comment should start with '# '[0m
+[1m[31mE     ./pbvs_package/mainROS.py:23:100: E501 line too long (108 > 99 characters)[0m
+[1m[31mE     ./pbvs_package/mainROS.py:25:1: W391 blank line at end of file[0m
+[1m[31mE     ./pbvs_package/actuator.py:3:1: F401 'std_msgs.msg.Float64' imported but unused[0m
+[1m[31mE     ./pbvs_package/actuator.py:7:1: F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names[0m
+[1m[31mE     ./pbvs_package/actuator.py:8:1: F403 'from machinevisiontoolbox import *' used; unable to detect undefined names[0m
+[1m[31mE     ./pbvs_package/actuator.py:9:1: F403 'from spatialmath.base import *' used; unable to detect undefined names[0m
+[1m[31mE     ./pbvs_package/actuator.py:10:1: F403 'from spatialmath import *' used; unable to detect undefined names[0m
+[1m[31mE     ./pbvs_package/actuator.py:12:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/actuator.py:23:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/actuator.py:24:100: E501 line too long (101 > 99 characters)[0m
+[1m[31mE     ./pbvs_package/actuator.py:25:23: F405 'CentralCamera' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base[0m
+[1m[31mE     ./pbvs_package/actuator.py:25:49: E251 unexpected spaces around keyword / parameter equals[0m
+[1m[31mE     ./pbvs_package/actuator.py:25:51: E251 unexpected spaces around keyword / parameter equals[0m
+[1m[31mE     ./pbvs_package/actuator.py:25:52: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base[0m
+[1m[31mE     ./pbvs_package/actuator.py:25:100: E501 line too long (127 > 99 characters)[0m
+[1m[31mE     ./pbvs_package/actuator.py:27:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/actuator.py:29:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/actuator.py:30:39: E261 at least two spaces before inline comment[0m
+[1m[31mE     ./pbvs_package/actuator.py:31:19: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base[0m
+[1m[31mE     ./pbvs_package/actuator.py:31:41: E261 at least two spaces before inline comment[0m
+[1m[31mE     ./pbvs_package/actuator.py:32:41: W291 trailing whitespace[0m
+[1m[31mE     ./pbvs_package/actuator.py:34:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./pbvs_package/actuator.py:38:26: F405 'PBVS_actuatorNode' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base[0m
+[1m[31mE     ./pbvs_package/actuator.py:43:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[1m[31mE     ./pbvs_package/actuator.py:44:11: W292 no newline at end of file[0m
+[1m[31mE   assert 1 == 0[0m
+----------------------------- Captured stdout call -----------------------------
+
+./pbvs_package/launcher.py:4:1: E302 expected 2 blank lines, found 1
+def generate_launch_description():
+^
+
+./pbvs_package/controller.py:7:1: F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names
+from machinevisiontoolbox.base import *
+^
+
+./pbvs_package/controller.py:8:1: F403 'from machinevisiontoolbox import *' used; unable to detect undefined names
+from machinevisiontoolbox import *
+^
+
+./pbvs_package/controller.py:9:1: F403 'from spatialmath.base import *' used; unable to detect undefined names
+from spatialmath.base import *
+^
+
+./pbvs_package/controller.py:10:1: F403 'from spatialmath import *' used; unable to detect undefined names
+from spatialmath import *
+^
+
+./pbvs_package/controller.py:11:1: F811 redefinition of unused 'np' from line 5
+import numpy as np
+^
+
+./pbvs_package/controller.py:12:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/controller.py:13:1: E302 expected 2 blank lines, found 1
+class PBVS_ControllerNode(Node):
+^
+
+./pbvs_package/controller.py:16:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/controller.py:24:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/controller.py:27:23: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base
+        self.pose_d = SE3.Tz(1)
+                      ^
+
+./pbvs_package/controller.py:28:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/controller.py:30:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/controller.py:31:33: E202 whitespace before ')'
+    def compute_TDelta(self, msg ):
+                                ^
+
+./pbvs_package/controller.py:34:44: E231 missing whitespace after ','
+        data = np.array(msg.data).reshape(4,4)
+                                           ^
+
+./pbvs_package/controller.py:35:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/controller.py:36:18: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base
+        Te_C_G = SE3(data) # convert to numpy array and then to a spatial math pose
+                 ^
+
+./pbvs_package/controller.py:36:27: E261 at least two spaces before inline comment
+        Te_C_G = SE3(data) # convert to numpy array and then to a spatial math pose
+                          ^
+
+./pbvs_package/controller.py:38:45: E261 at least two spaces before inline comment
+        T_delta = T_delta.A.flatten().tolist # convert to numpy array and then to list
+                                            ^
+
+./pbvs_package/controller.py:39:34: W291 trailing whitespace
+        msg = Float64MultiArray() 
+                                 ^
+
+./pbvs_package/controller.py:43:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/controller.py:51:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == '__main__':
+^
+
+./pbvs_package/controller.py:52:11: W292 no newline at end of file
+    main()          ^
+
+./pbvs_package/FeatureExtractor.py:3:1: F401 'std_msgs.msg.Float64' imported but unused
+from std_msgs.msg import Float64
+^
+
+./pbvs_package/FeatureExtractor.py:7:1: F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names
+from machinevisiontoolbox.base import *
+^
+
+./pbvs_package/FeatureExtractor.py:8:1: F403 'from machinevisiontoolbox import *' used; unable to detect undefined names
+from machinevisiontoolbox import *
+^
+
+./pbvs_package/FeatureExtractor.py:9:1: F403 'from spatialmath.base import *' used; unable to detect undefined names
+from spatialmath.base import *
+^
+
+./pbvs_package/FeatureExtractor.py:10:1: F403 'from spatialmath import *' used; unable to detect undefined names
+from spatialmath import *
+^
+
+./pbvs_package/FeatureExtractor.py:12:1: E302 expected 2 blank lines, found 1
+class PBVS_FeatureNode(Node):
+^
+
+./pbvs_package/FeatureExtractor.py:14:24: E261 at least two spaces before inline comment
+    def __init__(self): #, camera, p, pose_g=None):
+                       ^
+
+./pbvs_package/FeatureExtractor.py:14:25: E262 inline comment should start with '# '
+    def __init__(self): #, camera, p, pose_g=None):
+                        ^
+
+./pbvs_package/FeatureExtractor.py:17:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/FeatureExtractor.py:18:23: F405 'CentralCamera' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base
+        self.camera = CentralCamera.Default(pose = SE3.Trans(1, 1, -2))
+                      ^
+
+./pbvs_package/FeatureExtractor.py:18:49: E251 unexpected spaces around keyword / parameter equals
+        self.camera = CentralCamera.Default(pose = SE3.Trans(1, 1, -2))
+                                                ^
+
+./pbvs_package/FeatureExtractor.py:18:51: E251 unexpected spaces around keyword / parameter equals
+        self.camera = CentralCamera.Default(pose = SE3.Trans(1, 1, -2))
+                                                  ^
+
+./pbvs_package/FeatureExtractor.py:18:52: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base
+        self.camera = CentralCamera.Default(pose = SE3.Trans(1, 1, -2))
+                                                   ^
+
+./pbvs_package/FeatureExtractor.py:19:18: F405 'mkgrid' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base
+        self.P = mkgrid(2, 0.5)
+                 ^
+
+./pbvs_package/FeatureExtractor.py:20:23: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base
+        self.pose_g = SE3.Trans(-1, -1, 2)
+                      ^
+
+./pbvs_package/FeatureExtractor.py:21:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/FeatureExtractor.py:28:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/FeatureExtractor.py:30:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/FeatureExtractor.py:33:40: E231 missing whitespace after ','
+        data = np.array(pose).reshape(4,4)
+                                       ^
+
+./pbvs_package/FeatureExtractor.py:34:9: E265 block comment should start with '# '
+        #self.get_logger().info(f'Publishing: {data}')
+        ^
+
+./pbvs_package/FeatureExtractor.py:37:28: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base
+        self.camera.pose = SE3(data)
+                           ^
+
+./pbvs_package/FeatureExtractor.py:38:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/FeatureExtractor.py:42:70: W291 trailing whitespace
+        Te_C_G = self.camera.estpose(self.P, self.uv, frame="camera") 
+                                                                     ^
+
+./pbvs_package/FeatureExtractor.py:46:34: W291 trailing whitespace
+        msg = Float64MultiArray() 
+                                 ^
+
+./pbvs_package/FeatureExtractor.py:51:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/FeatureExtractor.py:52:1: E302 expected 2 blank lines, found 1
+def main(args=None):
+^
+
+./pbvs_package/FeatureExtractor.py:59:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == '__main__':
+^
+
+./pbvs_package/FeatureExtractor.py:60:11: W292 no newline at end of file
+    main()          ^
+
+./pbvs_package/mainROS.py:2:1: F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names
+from machinevisiontoolbox.base import *
+^
+
+./pbvs_package/mainROS.py:2:1: F401 'machinevisiontoolbox.base.*' imported but unused
+from machinevisiontoolbox.base import *
+^
+
+./pbvs_package/mainROS.py:3:1: F403 'from machinevisiontoolbox import *' used; unable to detect undefined names
+from machinevisiontoolbox import *
+^
+
+./pbvs_package/mainROS.py:3:1: F401 'machinevisiontoolbox.*' imported but unused
+from machinevisiontoolbox import *
+^
+
+./pbvs_package/mainROS.py:4:1: F403 'from spatialmath.base import *' used; unable to detect undefined names
+from spatialmath.base import *
+^
+
+./pbvs_package/mainROS.py:4:1: F401 'spatialmath.base.*' imported but unused
+from spatialmath.base import *
+^
+
+./pbvs_package/mainROS.py:5:1: F403 'from spatialmath import *' used; unable to detect undefined names
+from spatialmath import *
+^
+
+./pbvs_package/mainROS.py:5:1: F401 'spatialmath.*' imported but unused
+from spatialmath import *
+^
+
+./pbvs_package/mainROS.py:8:1: E265 block comment should start with '# '
+#camera = CentralCamera.Default(pose = SE3.Trans(1, 1, -2))
+^
+
+./pbvs_package/mainROS.py:10:1: E265 block comment should start with '# '
+#4 points-goal
+^
+
+./pbvs_package/mainROS.py:12:1: E265 block comment should start with '# '
+#P = mkgrid(2, 0.5)
+^
+
+./pbvs_package/mainROS.py:15:1: E265 block comment should start with '# '
+#pose_g=SE3.Trans(-1, -1, 2)
+^
+
+./pbvs_package/mainROS.py:17:19: E261 at least two spaces before inline comment
+pose_dParams = [1] #[0, 0, 1]
+                  ^
+
+./pbvs_package/mainROS.py:17:20: E262 inline comment should start with '# '
+pose_dParams = [1] #[0, 0, 1]
+                   ^
+
+./pbvs_package/mainROS.py:18:1: E265 block comment should start with '# '
+#pose_d=SE3.Tz(1) #SE3(0, 0, 1)
+^
+
+./pbvs_package/mainROS.py:20:8: E225 missing whitespace around operator
+plotvol=[-1, 2, -1, 2, -3, 2.5]
+       ^
+
+./pbvs_package/mainROS.py:22:1: E265 block comment should start with '# '
+#pbvs = V_PBVS(camera=camera, P=P, pose_g=pose_g, pose_d=pose_d, plotvol=plotvol)
+^
+
+./pbvs_package/mainROS.py:23:1: E265 block comment should start with '# '
+#pbvs.run(20) # Run the simulation for 20 steps, activaete the loop that iterate the function step 20 times.
+^
+
+./pbvs_package/mainROS.py:23:100: E501 line too long (108 > 99 characters)
+#pbvs.run(20) # Run the simulation for 20 steps, activaete the loop that iterate the function step 20 times.
+                                                                                                   ^
+
+./pbvs_package/mainROS.py:25:1: W391 blank line at end of file
+
+^
+
+./pbvs_package/actuator.py:3:1: F401 'std_msgs.msg.Float64' imported but unused
+from std_msgs.msg import Float64
+^
+
+./pbvs_package/actuator.py:7:1: F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names
+from machinevisiontoolbox.base import *
+^
+
+./pbvs_package/actuator.py:8:1: F403 'from machinevisiontoolbox import *' used; unable to detect undefined names
+from machinevisiontoolbox import *
+^
+
+./pbvs_package/actuator.py:9:1: F403 'from spatialmath.base import *' used; unable to detect undefined names
+from spatialmath.base import *
+^
+
+./pbvs_package/actuator.py:10:1: F403 'from spatialmath import *' used; unable to detect undefined names
+from spatialmath import *
+^
+
+./pbvs_package/actuator.py:12:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/actuator.py:23:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/actuator.py:24:100: E501 line too long (101 > 99 characters)
+        actuatorParams = self.get_parameter('actuatorParams').get_parameter_value().float_array_value
+                                                                                                   ^
+
+./pbvs_package/actuator.py:25:23: F405 'CentralCamera' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base
+        self.camera = CentralCamera.Default(pose = SE3.Trans(actuatorParams[0][0], actuatorParams[0][1], actuatorParams[0][2]))
+                      ^
+
+./pbvs_package/actuator.py:25:49: E251 unexpected spaces around keyword / parameter equals
+        self.camera = CentralCamera.Default(pose = SE3.Trans(actuatorParams[0][0], actuatorParams[0][1], actuatorParams[0][2]))
+                                                ^
+
+./pbvs_package/actuator.py:25:51: E251 unexpected spaces around keyword / parameter equals
+        self.camera = CentralCamera.Default(pose = SE3.Trans(actuatorParams[0][0], actuatorParams[0][1], actuatorParams[0][2]))
+                                                  ^
+
+./pbvs_package/actuator.py:25:52: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base
+        self.camera = CentralCamera.Default(pose = SE3.Trans(actuatorParams[0][0], actuatorParams[0][1], actuatorParams[0][2]))
+                                                   ^
+
+./pbvs_package/actuator.py:25:100: E501 line too long (127 > 99 characters)
+        self.camera = CentralCamera.Default(pose = SE3.Trans(actuatorParams[0][0], actuatorParams[0][1], actuatorParams[0][2]))
+                                                                                                   ^
+
+./pbvs_package/actuator.py:27:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/actuator.py:29:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/actuator.py:30:39: E261 at least two spaces before inline comment
+    def apply_velocity(self, T_delta): # T_delta is the received message no es un float
+                                      ^
+
+./pbvs_package/actuator.py:31:19: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base
+        T_delta = SE3(np.array(T_delta)) # convert to numpy array and then to a spatial math pose
+                  ^
+
+./pbvs_package/actuator.py:31:41: E261 at least two spaces before inline comment
+        T_delta = SE3(np.array(T_delta)) # convert to numpy array and then to a spatial math pose
+                                        ^
+
+./pbvs_package/actuator.py:32:41: W291 trailing whitespace
+        Td = T_delta.interp1(self.lmbda)  
+                                        ^
+
+./pbvs_package/actuator.py:34:1: W293 blank line contains whitespace
+        
+^
+
+./pbvs_package/actuator.py:38:26: F405 'PBVS_actuatorNode' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base
+    PBVS_actuator_node = PBVS_actuatorNode()
+                         ^
+
+./pbvs_package/actuator.py:43:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == '__main__':
+^
+
+./pbvs_package/actuator.py:44:11: W292 no newline at end of file
+    main()          ^
+
+1     E202 whitespace before ')'
+1     E225 missing whitespace around operator
+2     E231 missing whitespace after ','
+4     E251 unexpected spaces around keyword / parameter equals
+6     E261 at least two spaces before inline comment
+2     E262 inline comment should start with '# '
+8     E265 block comment should start with '# '
+4     E302 expected 2 blank lines, found 1
+3     E305 expected 2 blank lines after class or function definition, found 1
+3     E501 line too long (101 > 99 characters)
+6     F401 'std_msgs.msg.Float64' imported but unused
+16    F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names
+11    F405 'CentralCamera' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base
+1     F811 redefinition of unused 'np' from line 5
+4     W291 trailing whitespace
+3     W292 no newline at end of file
+18    W293 blank line contains whitespace
+1     W391 blank line at end of file
+
+10 files checked
+94 errors
+
+'E'-type errors: 34
+'F'-type errors: 34
+'W'-type errors: 26
+
+Checked files:
+
+* ./setup.py
+* ./test/test_pep257.py
+* ./test/test_copyright.py
+* ./test/test_flake8.py
+* ./pbvs_package/launcher.py
+* ./pbvs_package/controller.py
+* ./pbvs_package/__init__.py
+* ./pbvs_package/FeatureExtractor.py
+* ./pbvs_package/mainROS.py
+* ./pbvs_package/actuator.py
+----------------------------- Captured stderr call -----------------------------
+option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+- generated xml file: /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/pytest.xml -
+=========================== short test summary info ============================
+FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 94 code style...
+[31m============== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m, [33m2 warnings[0m[31m in 0.70s[0m[31m ==============[0m
+[33m=============================== warnings summary ===============================[0m
+test/test_flake8.py::test_flake8
+test/test_flake8.py::test_flake8
+  Warning: SelectableGroups dict interface is deprecated. Use select.
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html

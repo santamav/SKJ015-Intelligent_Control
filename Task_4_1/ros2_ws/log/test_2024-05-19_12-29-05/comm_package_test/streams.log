@@ -1,0 +1,161 @@
+[0.573s] Invoking command in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/comm_package_test': AMENT_PREFIX_PATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/pytest.xml --junit-prefix=comm_package_test -o cache_dir=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[3.304s] [1m============================= test session starts ==============================[0m
+[3.304s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[3.313s] cachedir: /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/.pytest_cache
+[3.313s] rootdir: /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/comm_package_test
+[3.313s] plugins: ament-copyright-0.12.10, ament-pep257-0.12.10, ament-xmllint-0.12.10, launch-testing-1.0.5, ament-lint-0.12.10, launch-testing-ros-0.19.7, ament-flake8-0.12.10, dash-2.16.1, cov-3.0.0, colcon-core-0.16.1
+[3.519s] [1mcollecting ... [0m[1m
+[3.519s] collected 3 items                                                              [0m
+[3.519s] 
+[3.530s] test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+[3.910s] test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+[3.949s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[3.949s] 
+[3.949s] =================================== FAILURES ===================================
+[3.949s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[3.949s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[4.003s] [33m=============================== warnings summary ===============================[0m
+[4.004s] test/test_flake8.py::test_flake8
+[4.004s] test/test_flake8.py::test_flake8
+[4.004s]   Warning: SelectableGroups dict interface is deprecated. Use select.
+[4.004s] 
+[4.004s] -- Docs: https://docs.pytest.org/en/stable/warnings.html
+[4.055s]     [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[4.055s] [1m[31mE   AssertionError: Found 21 code style errors / warnings:[0m
+[4.055s] [1m[31mE     ./comm_package_test/subscriber.py:3:1: F401 'std_msgs.msg.Float64' imported but unused[0m
+[4.055s] [1m[31mE     ./comm_package_test/subscriber.py:7:1: E302 expected 2 blank lines, found 1[0m
+[4.055s] [1m[31mE     ./comm_package_test/subscriber.py:10:1: W293 blank line contains whitespace[0m
+[4.055s] [1m[31mE     ./comm_package_test/subscriber.py:17:1: W293 blank line contains whitespace[0m
+[4.055s] [1m[31mE     ./comm_package_test/subscriber.py:19:44: E231 missing whitespace after ','[0m
+[4.055s] [1m[31mE     ./comm_package_test/subscriber.py:21:1: W293 blank line contains whitespace[0m
+[4.056s] [1m[31mE     ./comm_package_test/subscriber.py:22:1: W293 blank line contains whitespace[0m
+[4.056s] [1m[31mE     ./comm_package_test/subscriber.py:29:1: W293 blank line contains whitespace[0m
+[4.056s] [1m[31mE     ./comm_package_test/subscriber.py:30:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[4.056s] [1m[31mE     ./comm_package_test/subscriber.py:31:11: W292 no newline at end of file[0m
+[4.056s] [1m[31mE     ./comm_package_test/publisher.py:3:1: F401 'std_msgs.msg.Float64' imported but unused[0m
+[4.056s] [1m[31mE     ./comm_package_test/publisher.py:7:1: E302 expected 2 blank lines, found 1[0m
+[4.056s] [1m[31mE     ./comm_package_test/publisher.py:10:1: W293 blank line contains whitespace[0m
+[4.056s] [1m[31mE     ./comm_package_test/publisher.py:14:27: E261 at least two spaces before inline comment[0m
+[4.057s] [1m[31mE     ./comm_package_test/publisher.py:17:1: W293 blank line contains whitespace[0m
+[4.057s] [1m[31mE     ./comm_package_test/publisher.py:25:1: E302 expected 2 blank lines, found 1[0m
+[4.057s] [1m[31mE     ./comm_package_test/publisher.py:31:1: W293 blank line contains whitespace[0m
+[4.057s] [1m[31mE     ./comm_package_test/publisher.py:32:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[4.057s] [1m[31mE     ./comm_package_test/publisher.py:33:11: W292 no newline at end of file[0m
+[4.057s] [1m[31mE     ./launch/launcher.py:4:1: E302 expected 2 blank lines, found 1[0m
+[4.057s] [1m[31mE     ./launch/launcher.py:12:7: W292 no newline at end of file[0m
+[4.057s] [1m[31mE   assert 1 == 0[0m
+[4.058s] ----------------------------- Captured stdout call -----------------------------
+[4.058s] 
+[4.058s] ./comm_package_test/subscriber.py:3:1: F401 'std_msgs.msg.Float64' imported but unused
+[4.058s] from std_msgs.msg import Float64
+[4.058s] ^
+[4.058s] 
+[4.058s] ./comm_package_test/subscriber.py:7:1: E302 expected 2 blank lines, found 1
+[4.058s] class SubscriberNode(Node):
+[4.059s] ^
+[4.059s] 
+[4.059s] ./comm_package_test/subscriber.py:10:1: W293 blank line contains whitespace
+[4.059s]         
+[4.059s] ^
+[4.059s] 
+[4.059s] ./comm_package_test/subscriber.py:17:1: W293 blank line contains whitespace
+[4.059s]         
+[4.060s] ^
+[4.060s] 
+[4.060s] ./comm_package_test/subscriber.py:19:44: E231 missing whitespace after ','
+[4.060s]         data = np.array(msg.data).reshape(4,4)
+[4.060s]                                            ^
+[4.060s] 
+[4.060s] ./comm_package_test/subscriber.py:21:1: W293 blank line contains whitespace
+[4.060s]         
+[4.061s] ^
+[4.061s] 
+[4.061s] ./comm_package_test/subscriber.py:22:1: W293 blank line contains whitespace
+[4.061s]         
+[4.061s] ^
+[4.061s] 
+[4.061s] ./comm_package_test/subscriber.py:29:1: W293 blank line contains whitespace
+[4.061s]     
+[4.061s] ^
+[4.062s] 
+[4.062s] ./comm_package_test/subscriber.py:30:1: E305 expected 2 blank lines after class or function definition, found 1
+[4.062s] if __name__ == '__main__':
+[4.062s] ^
+[4.062s] 
+[4.062s] ./comm_package_test/subscriber.py:31:11: W292 no newline at end of file
+[4.062s]     main()          ^
+[4.063s] 
+[4.063s] ./comm_package_test/publisher.py:3:1: F401 'std_msgs.msg.Float64' imported but unused
+[4.063s] from std_msgs.msg import Float64
+[4.063s] ^
+[4.063s] 
+[4.063s] ./comm_package_test/publisher.py:7:1: E302 expected 2 blank lines, found 1
+[4.063s] class PublisherNode(Node):
+[4.063s] ^
+[4.063s] 
+[4.064s] ./comm_package_test/publisher.py:10:1: W293 blank line contains whitespace
+[4.064s]         
+[4.064s] ^
+[4.064s] 
+[4.064s] ./comm_package_test/publisher.py:14:27: E261 at least two spaces before inline comment
+[4.064s]         timer_period = 0.5 # Would this be like the step function?
+[4.064s]                           ^
+[4.064s] 
+[4.064s] ./comm_package_test/publisher.py:17:1: W293 blank line contains whitespace
+[4.065s]         
+[4.065s] ^
+[4.065s] 
+[4.065s] ./comm_package_test/publisher.py:25:1: E302 expected 2 blank lines, found 1
+[4.065s] def main(args=None):
+[4.065s] ^
+[4.065s] 
+[4.065s] ./comm_package_test/publisher.py:31:1: W293 blank line contains whitespace
+[4.065s]     
+[4.066s] ^
+[4.066s] 
+[4.066s] ./comm_package_test/publisher.py:32:1: E305 expected 2 blank lines after class or function definition, found 1
+[4.066s] if __name__ == '__main__':
+[4.066s] ^
+[4.066s] 
+[4.066s] ./comm_package_test/publisher.py:33:11: W292 no newline at end of file
+[4.066s]     main()          ^
+[4.066s] 
+[4.067s] ./launch/launcher.py:4:1: E302 expected 2 blank lines, found 1
+[4.067s] def generate_launch_description():
+[4.067s] ^
+[4.067s] 
+[4.067s] ./launch/launcher.py:12:7: W292 no newline at end of file
+[4.067s]     ])      ^
+[4.067s] 
+[4.067s] 1     E231 missing whitespace after ','
+[4.067s] 1     E261 at least two spaces before inline comment
+[4.067s] 4     E302 expected 2 blank lines, found 1
+[4.068s] 2     E305 expected 2 blank lines after class or function definition, found 1
+[4.068s] 2     F401 'std_msgs.msg.Float64' imported but unused
+[4.068s] 3     W292 no newline at end of file
+[4.068s] 8     W293 blank line contains whitespace
+[4.068s] 
+[4.068s] 8 files checked
+[4.068s] 21 errors
+[4.069s] 
+[4.069s] 'E'-type errors: 8
+[4.069s] 'F'-type errors: 2
+[4.069s] 'W'-type errors: 11
+[4.069s] 
+[4.069s] Checked files:
+[4.069s] 
+[4.069s] * ./setup.py
+[4.070s] * ./test/test_pep257.py
+[4.070s] * ./test/test_copyright.py
+[4.070s] * ./test/test_flake8.py
+[4.070s] * ./comm_package_test/__init__.py
+[4.070s] * ./comm_package_test/subscriber.py
+[4.070s] * ./comm_package_test/publisher.py
+[4.070s] * ./launch/launcher.py
+[4.070s] ----------------------------- Captured stderr call -----------------------------
+[4.070s] option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+[4.071s] - generated xml file: /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/pytest.xml -
+[4.071s] =========================== short test summary info ============================
+[4.071s] FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 21 code style...
+[4.071s] [31m============== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m, [33m2 warnings[0m[31m in 0.70s[0m[31m ==============[0m
+[4.307s] Invoked command in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/comm_package_test' returned '1': AMENT_PREFIX_PATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/pytest.xml --junit-prefix=comm_package_test -o cache_dir=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

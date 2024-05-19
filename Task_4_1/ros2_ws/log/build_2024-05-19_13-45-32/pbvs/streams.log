@@ -1,0 +1,29 @@
+[1.358s] Invoking command in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/pbvs': PYTHONPATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/prefix_override:/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pbvs build --build-base /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/build install --record /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/install.log --single-version-externally-managed install_data
+[1.911s] running egg_info
+[1.914s] writing ../../build/pbvs/pbvs.egg-info/PKG-INFO
+[1.914s] writing dependency_links to ../../build/pbvs/pbvs.egg-info/dependency_links.txt
+[1.917s] writing entry points to ../../build/pbvs/pbvs.egg-info/entry_points.txt
+[1.917s] writing requirements to ../../build/pbvs/pbvs.egg-info/requires.txt
+[1.918s] writing top-level names to ../../build/pbvs/pbvs.egg-info/top_level.txt
+[1.921s] reading manifest file '../../build/pbvs/pbvs.egg-info/SOURCES.txt'
+[1.921s] adding license file 'LICENSE'
+[1.922s] writing manifest file '../../build/pbvs/pbvs.egg-info/SOURCES.txt'
+[1.922s] running build
+[1.923s] running build_py
+[1.930s] copying pbvs/controller.py -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/build/lib/pbvs
+[1.930s] copying pbvs/feature_extractor.py -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/build/lib/pbvs
+[1.931s] running install
+[1.931s] running install_lib
+[1.931s] copying /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/build/lib/pbvs/controller.py -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages/pbvs
+[1.931s] copying /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/build/lib/pbvs/feature_extractor.py -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages/pbvs
+[1.932s] byte-compiling /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages/pbvs/controller.py to controller.cpython-310.pyc
+[1.932s] byte-compiling /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages/pbvs/feature_extractor.py to feature_extractor.cpython-310.pyc
+[1.933s] running install_data
+[1.933s] running install_egg_info
+[1.936s] removing '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages/pbvs-0.0.0-py3.10.egg-info' (and everything under it)
+[1.936s] Copying ../../build/pbvs/pbvs.egg-info to /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages/pbvs-0.0.0-py3.10.egg-info
+[1.939s] running install_scripts
+[1.985s] Installing controller script to /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/pbvs
+[1.987s] Installing feature_extractor script to /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/pbvs
+[1.987s] writing list of installed files to '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/install.log'
+[2.052s] Invoked command in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/pbvs' returned '0': PYTHONPATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/prefix_override:/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pbvs build --build-base /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/build install --record /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/install.log --single-version-externally-managed install_data

@@ -1,0 +1,25 @@
+running egg_info
+writing ../../build/pbvs_package/pbvs_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/pbvs_package/pbvs_package.egg-info/dependency_links.txt
+writing entry points to ../../build/pbvs_package/pbvs_package.egg-info/entry_points.txt
+writing requirements to ../../build/pbvs_package/pbvs_package.egg-info/requires.txt
+writing top-level names to ../../build/pbvs_package/pbvs_package.egg-info/top_level.txt
+reading manifest file '../../build/pbvs_package/pbvs_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/pbvs_package/pbvs_package.egg-info/SOURCES.txt'
+running build
+running build_py
+copying pbvs_package/FeatureExtractor.py -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/build/lib/pbvs_package
+running install
+running install_lib
+copying /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/build/lib/pbvs_package/FeatureExtractor.py -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/python3.10/site-packages/pbvs_package
+byte-compiling /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/python3.10/site-packages/pbvs_package/FeatureExtractor.py to FeatureExtractor.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/python3.10/site-packages/pbvs_package-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/pbvs_package/pbvs_package.egg-info to /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/python3.10/site-packages/pbvs_package-0.0.0-py3.10.egg-info
+running install_scripts
+Installing actuator_node script to /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/pbvs_package
+Installing controller_node script to /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/pbvs_package
+Installing feature_extraction_node script to /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/pbvs_package
+writing list of installed files to '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/install.log'
