@@ -1,0 +1,752 @@
+[0.000000] (-) TimerEvent: {}
+[0.000297] (comm_package_test) JobQueued: {'identifier': 'comm_package_test', 'dependencies': OrderedDict([('comm_package_test', '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test')])}
+[0.000434] (pbvs_package) JobQueued: {'identifier': 'pbvs_package', 'dependencies': OrderedDict([('pbvs_package', '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package')])}
+[0.000521] (comm_package_test) JobStarted: {'identifier': 'comm_package_test'}
+[0.044757] (pbvs_package) JobStarted: {'identifier': 'pbvs_package'}
+[0.099046] (-) TimerEvent: {}
+[0.201962] (-) TimerEvent: {}
+[0.302542] (-) TimerEvent: {}
+[0.403446] (-) TimerEvent: {}
+[0.517583] (-) TimerEvent: {}
+[0.571527] (comm_package_test) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/comm_package_test', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sjk015', 'LC_TIME': 'es_ES.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/sjk015', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_ES.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1035', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=f432f8fd169ad6fd820fd7ea6649d305', 'COLORTERM': 'truecolor', '_CE_M': '', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'sjk015', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sjk015', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/sjk015/miniconda3/condabin:/home/sjk015/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/sjk015-VirtualBox:@/tmp/.ICE-unix/1035,unix/sjk015-VirtualBox:/tmp/.ICE-unix/1035', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_ES.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b44e59ef_f5da_4d15_b09c_f874a6dd82eb', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_ES.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.UQUQN2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.129', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test:/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/sjk015/miniconda3/bin/python', 'SHELL': '/bin/bash', 'LC_NAME': 'es_ES.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_ES.UTF-8', 'LC_IDENTIFICATION': 'es_ES.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/sjk015/miniconda3/bin/conda', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=f432f8fd169ad6fd820fd7ea6649d305', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/comm_package_test/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_ES.UTF-8', 'LC_PAPER': 'es_ES.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/pytest.xml --junit-prefix=comm_package_test -o cache_dir=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/.pytest_cache'}, 'shell': False}
+[0.617837] (-) TimerEvent: {}
+[0.718219] (-) TimerEvent: {}
+[0.818847] (-) TimerEvent: {}
+[0.919479] (-) TimerEvent: {}
+[1.020753] (-) TimerEvent: {}
+[1.107697] (pbvs_package) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/pbvs_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sjk015', 'LC_TIME': 'es_ES.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/sjk015', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_ES.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1035', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=f432f8fd169ad6fd820fd7ea6649d305', 'COLORTERM': 'truecolor', '_CE_M': '', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'sjk015', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sjk015', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/sjk015/miniconda3/condabin:/home/sjk015/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/sjk015-VirtualBox:@/tmp/.ICE-unix/1035,unix/sjk015-VirtualBox:/tmp/.ICE-unix/1035', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_ES.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b44e59ef_f5da_4d15_b09c_f874a6dd82eb', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_ES.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.UQUQN2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.129', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package:/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/sjk015/miniconda3/bin/python', 'SHELL': '/bin/bash', 'LC_NAME': 'es_ES.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_ES.UTF-8', 'LC_IDENTIFICATION': 'es_ES.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/sjk015/miniconda3/bin/conda', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=f432f8fd169ad6fd820fd7ea6649d305', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_ES.UTF-8', 'LC_PAPER': 'es_ES.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/pytest.xml --junit-prefix=pbvs_package -o cache_dir=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/.pytest_cache'}, 'shell': False}
+[1.121520] (-) TimerEvent: {}
+[1.223567] (-) TimerEvent: {}
+[1.324804] (-) TimerEvent: {}
+[1.425492] (-) TimerEvent: {}
+[1.527537] (-) TimerEvent: {}
+[1.628488] (-) TimerEvent: {}
+[1.732464] (-) TimerEvent: {}
+[1.833021] (-) TimerEvent: {}
+[1.933891] (-) TimerEvent: {}
+[2.034481] (-) TimerEvent: {}
+[2.138713] (-) TimerEvent: {}
+[2.240502] (-) TimerEvent: {}
+[2.341144] (-) TimerEvent: {}
+[2.441904] (-) TimerEvent: {}
+[2.542520] (-) TimerEvent: {}
+[2.643294] (-) TimerEvent: {}
+[2.743867] (-) TimerEvent: {}
+[2.844455] (-) TimerEvent: {}
+[2.945402] (-) TimerEvent: {}
+[3.046468] (-) TimerEvent: {}
+[3.148726] (-) TimerEvent: {}
+[3.249832] (-) TimerEvent: {}
+[3.302136] (pbvs_package) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[3.302444] (pbvs_package) StdoutLine: {'line': b'platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0\n'}
+[3.304031] (comm_package_test) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[3.304291] (comm_package_test) StdoutLine: {'line': b'platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0\n'}
+[3.312269] (pbvs_package) StdoutLine: {'line': b'cachedir: /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/.pytest_cache\n'}
+[3.312596] (pbvs_package) StdoutLine: {'line': b'rootdir: /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/pbvs_package\n'}
+[3.312730] (pbvs_package) StdoutLine: {'line': b'plugins: ament-copyright-0.12.10, ament-pep257-0.12.10, ament-xmllint-0.12.10, launch-testing-1.0.5, ament-lint-0.12.10, launch-testing-ros-0.19.7, ament-flake8-0.12.10, dash-2.16.1, cov-3.0.0, colcon-core-0.16.1\n'}
+[3.313284] (comm_package_test) StdoutLine: {'line': b'cachedir: /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/.pytest_cache\n'}
+[3.313473] (comm_package_test) StdoutLine: {'line': b'rootdir: /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/comm_package_test\n'}
+[3.313580] (comm_package_test) StdoutLine: {'line': b'plugins: ament-copyright-0.12.10, ament-pep257-0.12.10, ament-xmllint-0.12.10, launch-testing-1.0.5, ament-lint-0.12.10, launch-testing-ros-0.19.7, ament-flake8-0.12.10, dash-2.16.1, cov-3.0.0, colcon-core-0.16.1\n'}
+[3.351779] (-) TimerEvent: {}
+[3.452502] (-) TimerEvent: {}
+[3.513227] (pbvs_package) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[3.513523] (pbvs_package) StdoutLine: {'line': b'collected 3 items                                                              \x1b[0m\n'}
+[3.513810] (pbvs_package) StdoutLine: {'line': b'\n'}
+[3.519146] (comm_package_test) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[3.519448] (comm_package_test) StdoutLine: {'line': b'collected 3 items                                                              \x1b[0m\n'}
+[3.519736] (comm_package_test) StdoutLine: {'line': b'\n'}
+[3.524517] (pbvs_package) StdoutLine: {'line': b'test/test_copyright.py \x1b[33ms\x1b[0m\x1b[32m                                                 [ 33%]\x1b[0m\n'}
+[3.530434] (comm_package_test) StdoutLine: {'line': b'test/test_copyright.py \x1b[33ms\x1b[0m\x1b[32m                                                 [ 33%]\x1b[0m\n'}
+[3.552747] (-) TimerEvent: {}
+[3.660806] (-) TimerEvent: {}
+[3.761382] (-) TimerEvent: {}
+[3.861984] (-) TimerEvent: {}
+[3.901504] (pbvs_package) StdoutLine: {'line': b'test/test_flake8.py \x1b[31mF\x1b[0m\x1b[31m                                                    [ 66%]\x1b[0m\n'}
+[3.910321] (comm_package_test) StdoutLine: {'line': b'test/test_flake8.py \x1b[31mF\x1b[0m\x1b[31m                                                    [ 66%]\x1b[0m\n'}
+[3.948358] (pbvs_package) StdoutLine: {'line': b'test/test_pep257.py \x1b[32m.\x1b[0m\x1b[31m                                                    [100%]\x1b[0m\n'}
+[3.948681] (pbvs_package) StdoutLine: {'line': b'\n'}
+[3.948830] (pbvs_package) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[3.948972] (pbvs_package) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_flake8 __________________________________\x1b[0m\n'}
+[3.949248] (comm_package_test) StdoutLine: {'line': b'test/test_pep257.py \x1b[32m.\x1b[0m\x1b[31m                                                    [100%]\x1b[0m\n'}
+[3.949361] (comm_package_test) StdoutLine: {'line': b'\n'}
+[3.949472] (comm_package_test) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[3.949572] (comm_package_test) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_flake8 __________________________________\x1b[0m\n'}
+[3.949666] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_flake8.py\x1b[0m:23: in test_flake8\n'}
+[3.949757] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_flake8.py\x1b[0m:23: in test_flake8\n'}
+[3.962622] (-) TimerEvent: {}
+[4.003383] (comm_package_test) StderrLine: {'line': b'\x1b[33m=============================== warnings summary ===============================\x1b[0m\n'}
+[4.003779] (comm_package_test) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[4.004152] (comm_package_test) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[4.004346] (comm_package_test) StderrLine: {'line': b'  Warning: SelectableGroups dict interface is deprecated. Use select.\n'}
+[4.004555] (comm_package_test) StderrLine: {'line': b'\n'}
+[4.004701] (comm_package_test) StderrLine: {'line': b'-- Docs: https://docs.pytest.org/en/stable/warnings.html\n'}
+[4.004833] (pbvs_package) StdoutLine: {'line': b'    \x1b[94massert\x1b[39;49;00m rc == \x1b[94m0\x1b[39;49;00m, \\\n'}
+[4.004978] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found 94 code style errors / warnings:\x1b[0m\n'}
+[4.005115] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/launcher.py:4:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[4.005248] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:7:1: F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names\x1b[0m\n"}
+[4.005379] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:8:1: F403 'from machinevisiontoolbox import *' used; unable to detect undefined names\x1b[0m\n"}
+[4.005543] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:9:1: F403 'from spatialmath.base import *' used; unable to detect undefined names\x1b[0m\n"}
+[4.005668] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:10:1: F403 'from spatialmath import *' used; unable to detect undefined names\x1b[0m\n"}
+[4.005762] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:11:1: F811 redefinition of unused 'np' from line 5\x1b[0m\n"}
+[4.005855] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:12:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.005948] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:13:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[4.006041] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:16:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.006133] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:24:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.006222] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:27:23: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\x1b[0m\n"}
+[4.006315] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:28:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.006404] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:30:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.006567] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:31:33: E202 whitespace before ')'\x1b[0m\n"}
+[4.006672] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:34:44: E231 missing whitespace after ','\x1b[0m\n"}
+[4.013260] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:35:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.013419] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:36:18: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\x1b[0m\n"}
+[4.013562] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:36:27: E261 at least two spaces before inline comment\x1b[0m\n'}
+[4.013666] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:38:45: E261 at least two spaces before inline comment\x1b[0m\n'}
+[4.013765] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:39:34: W291 trailing whitespace\x1b[0m\n'}
+[4.013873] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:43:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.013973] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:51:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[4.014070] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/controller.py:52:11: W292 no newline at end of file\x1b[0m\n'}
+[4.014166] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:3:1: F401 'std_msgs.msg.Float64' imported but unused\x1b[0m\n"}
+[4.014274] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:7:1: F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names\x1b[0m\n"}
+[4.014382] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:8:1: F403 'from machinevisiontoolbox import *' used; unable to detect undefined names\x1b[0m\n"}
+[4.014501] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:9:1: F403 'from spatialmath.base import *' used; unable to detect undefined names\x1b[0m\n"}
+[4.014607] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:10:1: F403 'from spatialmath import *' used; unable to detect undefined names\x1b[0m\n"}
+[4.014712] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:12:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[4.014816] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:14:24: E261 at least two spaces before inline comment\x1b[0m\n'}
+[4.014916] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:14:25: E262 inline comment should start with '# '\x1b[0m\n"}
+[4.015019] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:17:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.015119] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:18:23: F405 'CentralCamera' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\x1b[0m\n"}
+[4.015223] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:18:49: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[4.015324] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:18:51: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[4.015426] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:18:52: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\x1b[0m\n"}
+[4.015530] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:19:18: F405 'mkgrid' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\x1b[0m\n"}
+[4.015791] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:20:23: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\x1b[0m\n"}
+[4.015913] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:21:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.016020] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:28:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.016126] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:30:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.016233] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:33:40: E231 missing whitespace after ','\x1b[0m\n"}
+[4.016338] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:34:9: E265 block comment should start with '# '\x1b[0m\n"}
+[4.016442] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:37:28: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\x1b[0m\n"}
+[4.016881] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:38:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.017055] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:42:70: W291 trailing whitespace\x1b[0m\n'}
+[4.017174] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:46:34: W291 trailing whitespace\x1b[0m\n'}
+[4.017283] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:51:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.017398] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:52:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[4.017526] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:59:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[4.017638] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/FeatureExtractor.py:60:11: W292 no newline at end of file\x1b[0m\n'}
+[4.017744] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:2:1: F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names\x1b[0m\n"}
+[4.017851] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:2:1: F401 'machinevisiontoolbox.base.*' imported but unused\x1b[0m\n"}
+[4.017956] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:3:1: F403 'from machinevisiontoolbox import *' used; unable to detect undefined names\x1b[0m\n"}
+[4.018061] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:3:1: F401 'machinevisiontoolbox.*' imported but unused\x1b[0m\n"}
+[4.018163] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:4:1: F403 'from spatialmath.base import *' used; unable to detect undefined names\x1b[0m\n"}
+[4.018267] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:4:1: F401 'spatialmath.base.*' imported but unused\x1b[0m\n"}
+[4.018372] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:5:1: F403 'from spatialmath import *' used; unable to detect undefined names\x1b[0m\n"}
+[4.018475] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:5:1: F401 'spatialmath.*' imported but unused\x1b[0m\n"}
+[4.018590] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:8:1: E265 block comment should start with '# '\x1b[0m\n"}
+[4.018698] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:10:1: E265 block comment should start with '# '\x1b[0m\n"}
+[4.018807] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:12:1: E265 block comment should start with '# '\x1b[0m\n"}
+[4.018915] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:15:1: E265 block comment should start with '# '\x1b[0m\n"}
+[4.019024] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:17:19: E261 at least two spaces before inline comment\x1b[0m\n'}
+[4.019133] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:17:20: E262 inline comment should start with '# '\x1b[0m\n"}
+[4.019240] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:18:1: E265 block comment should start with '# '\x1b[0m\n"}
+[4.019352] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:20:8: E225 missing whitespace around operator\x1b[0m\n'}
+[4.019456] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:22:1: E265 block comment should start with '# '\x1b[0m\n"}
+[4.019560] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:23:1: E265 block comment should start with '# '\x1b[0m\n"}
+[4.019663] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:23:100: E501 line too long (108 > 99 characters)\x1b[0m\n'}
+[4.019767] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/mainROS.py:25:1: W391 blank line at end of file\x1b[0m\n'}
+[4.019866] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:3:1: F401 'std_msgs.msg.Float64' imported but unused\x1b[0m\n"}
+[4.019968] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:7:1: F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names\x1b[0m\n"}
+[4.020138] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:8:1: F403 'from machinevisiontoolbox import *' used; unable to detect undefined names\x1b[0m\n"}
+[4.020355] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:9:1: F403 'from spatialmath.base import *' used; unable to detect undefined names\x1b[0m\n"}
+[4.020567] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:10:1: F403 'from spatialmath import *' used; unable to detect undefined names\x1b[0m\n"}
+[4.020780] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:12:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.021862] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:23:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.021982] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:24:100: E501 line too long (101 > 99 characters)\x1b[0m\n'}
+[4.022092] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:25:23: F405 'CentralCamera' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\x1b[0m\n"}
+[4.022206] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:25:49: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[4.022318] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:25:51: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[4.022429] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:25:52: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\x1b[0m\n"}
+[4.022546] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:25:100: E501 line too long (127 > 99 characters)\x1b[0m\n'}
+[4.022652] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:27:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.022758] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:29:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.022859] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:30:39: E261 at least two spaces before inline comment\x1b[0m\n'}
+[4.022960] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:31:19: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\x1b[0m\n"}
+[4.023061] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:31:41: E261 at least two spaces before inline comment\x1b[0m\n'}
+[4.023168] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:32:41: W291 trailing whitespace\x1b[0m\n'}
+[4.023269] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:34:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.023371] (pbvs_package) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:38:26: F405 'PBVS_actuatorNode' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\x1b[0m\n"}
+[4.023479] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:43:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[4.023587] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./pbvs_package/actuator.py:44:11: W292 no newline at end of file\x1b[0m\n'}
+[4.023690] (pbvs_package) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[4.023829] (pbvs_package) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[4.023954] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.024112] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/launcher.py:4:1: E302 expected 2 blank lines, found 1\n'}
+[4.024351] (pbvs_package) StdoutLine: {'line': b'def generate_launch_description():\n'}
+[4.024518] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.024651] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.024761] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/controller.py:7:1: F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names\n"}
+[4.024871] (pbvs_package) StdoutLine: {'line': b'from machinevisiontoolbox.base import *\n'}
+[4.024979] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.025086] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.025192] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/controller.py:8:1: F403 'from machinevisiontoolbox import *' used; unable to detect undefined names\n"}
+[4.025303] (pbvs_package) StdoutLine: {'line': b'from machinevisiontoolbox import *\n'}
+[4.025408] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.025542] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.025652] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/controller.py:9:1: F403 'from spatialmath.base import *' used; unable to detect undefined names\n"}
+[4.025760] (pbvs_package) StdoutLine: {'line': b'from spatialmath.base import *\n'}
+[4.025866] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.025977] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.026083] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/controller.py:10:1: F403 'from spatialmath import *' used; unable to detect undefined names\n"}
+[4.026189] (pbvs_package) StdoutLine: {'line': b'from spatialmath import *\n'}
+[4.026297] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.026403] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.026506] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/controller.py:11:1: F811 redefinition of unused 'np' from line 5\n"}
+[4.026612] (pbvs_package) StdoutLine: {'line': b'import numpy as np\n'}
+[4.026714] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.026815] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.026917] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/controller.py:12:1: W293 blank line contains whitespace\n'}
+[4.027018] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.027120] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.027221] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.027320] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/controller.py:13:1: E302 expected 2 blank lines, found 1\n'}
+[4.027422] (pbvs_package) StdoutLine: {'line': b'class PBVS_ControllerNode(Node):\n'}
+[4.027522] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.027620] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.027716] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/controller.py:16:1: W293 blank line contains whitespace\n'}
+[4.027816] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.027923] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.028021] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.028118] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/controller.py:24:1: W293 blank line contains whitespace\n'}
+[4.028217] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.028313] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.028410] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.028508] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/controller.py:27:23: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\n"}
+[4.028609] (pbvs_package) StdoutLine: {'line': b'        self.pose_d = SE3.Tz(1)\n'}
+[4.028709] (pbvs_package) StdoutLine: {'line': b'                      ^\n'}
+[4.028809] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.028921] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/controller.py:28:1: W293 blank line contains whitespace\n'}
+[4.029029] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.029140] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.029253] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.029364] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/controller.py:30:1: W293 blank line contains whitespace\n'}
+[4.029504] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.029627] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.029749] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.029893] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/controller.py:31:33: E202 whitespace before ')'\n"}
+[4.030018] (pbvs_package) StdoutLine: {'line': b'    def compute_TDelta(self, msg ):\n'}
+[4.030132] (pbvs_package) StdoutLine: {'line': b'                                ^\n'}
+[4.030242] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.030352] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/controller.py:34:44: E231 missing whitespace after ','\n"}
+[4.030461] (pbvs_package) StdoutLine: {'line': b'        data = np.array(msg.data).reshape(4,4)\n'}
+[4.030571] (pbvs_package) StdoutLine: {'line': b'                                           ^\n'}
+[4.030680] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.030787] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/controller.py:35:1: W293 blank line contains whitespace\n'}
+[4.031033] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.031160] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.031278] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.031393] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/controller.py:36:18: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\n"}
+[4.031512] (pbvs_package) StdoutLine: {'line': b'        Te_C_G = SE3(data) # convert to numpy array and then to a spatial math pose\n'}
+[4.031629] (pbvs_package) StdoutLine: {'line': b'                 ^\n'}
+[4.031747] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.031875] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/controller.py:36:27: E261 at least two spaces before inline comment\n'}
+[4.031997] (pbvs_package) StdoutLine: {'line': b'        Te_C_G = SE3(data) # convert to numpy array and then to a spatial math pose\n'}
+[4.032116] (pbvs_package) StdoutLine: {'line': b'                          ^\n'}
+[4.032237] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.032359] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/controller.py:38:45: E261 at least two spaces before inline comment\n'}
+[4.032479] (pbvs_package) StdoutLine: {'line': b'        T_delta = T_delta.A.flatten().tolist # convert to numpy array and then to list\n'}
+[4.032597] (pbvs_package) StdoutLine: {'line': b'                                            ^\n'}
+[4.032713] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.032829] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/controller.py:39:34: W291 trailing whitespace\n'}
+[4.033065] (pbvs_package) StdoutLine: {'line': b'        msg = Float64MultiArray() \n'}
+[4.033180] (pbvs_package) StdoutLine: {'line': b'                                 ^\n'}
+[4.033299] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.033410] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/controller.py:43:1: W293 blank line contains whitespace\n'}
+[4.033562] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.033679] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.033796] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.033905] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/controller.py:51:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[4.034014] (pbvs_package) StdoutLine: {'line': b"if __name__ == '__main__':\n"}
+[4.034127] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.034245] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.034362] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/controller.py:52:11: W292 no newline at end of file\n'}
+[4.034480] (pbvs_package) StdoutLine: {'line': b'    main()          ^\n'}
+[4.034596] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.034712] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/FeatureExtractor.py:3:1: F401 'std_msgs.msg.Float64' imported but unused\n"}
+[4.034833] (pbvs_package) StdoutLine: {'line': b'from std_msgs.msg import Float64\n'}
+[4.035025] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.035178] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.035352] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/FeatureExtractor.py:7:1: F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names\n"}
+[4.035493] (pbvs_package) StdoutLine: {'line': b'from machinevisiontoolbox.base import *\n'}
+[4.035624] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.035755] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.035886] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/FeatureExtractor.py:8:1: F403 'from machinevisiontoolbox import *' used; unable to detect undefined names\n"}
+[4.036126] (pbvs_package) StdoutLine: {'line': b'from machinevisiontoolbox import *\n'}
+[4.036598] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.036759] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.036908] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/FeatureExtractor.py:9:1: F403 'from spatialmath.base import *' used; unable to detect undefined names\n"}
+[4.037072] (pbvs_package) StdoutLine: {'line': b'from spatialmath.base import *\n'}
+[4.037231] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.037391] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.037595] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/FeatureExtractor.py:10:1: F403 'from spatialmath import *' used; unable to detect undefined names\n"}
+[4.037771] (pbvs_package) StdoutLine: {'line': b'from spatialmath import *\n'}
+[4.037934] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.038094] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.038250] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/FeatureExtractor.py:12:1: E302 expected 2 blank lines, found 1\n'}
+[4.038410] (pbvs_package) StdoutLine: {'line': b'class PBVS_FeatureNode(Node):\n'}
+[4.038568] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.038725] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.038879] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/FeatureExtractor.py:14:24: E261 at least two spaces before inline comment\n'}
+[4.039031] (pbvs_package) StdoutLine: {'line': b'    def __init__(self): #, camera, p, pose_g=None):\n'}
+[4.039174] (pbvs_package) StdoutLine: {'line': b'                       ^\n'}
+[4.039312] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.039452] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/FeatureExtractor.py:14:25: E262 inline comment should start with '# '\n"}
+[4.039591] (pbvs_package) StdoutLine: {'line': b'    def __init__(self): #, camera, p, pose_g=None):\n'}
+[4.039754] (pbvs_package) StdoutLine: {'line': b'                        ^\n'}
+[4.039896] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.040026] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/FeatureExtractor.py:17:1: W293 blank line contains whitespace\n'}
+[4.040157] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.040284] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.040485] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.040640] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/FeatureExtractor.py:18:23: F405 'CentralCamera' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\n"}
+[4.040783] (pbvs_package) StdoutLine: {'line': b'        self.camera = CentralCamera.Default(pose = SE3.Trans(1, 1, -2))\n'}
+[4.040917] (pbvs_package) StdoutLine: {'line': b'                      ^\n'}
+[4.041046] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.041177] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/FeatureExtractor.py:18:49: E251 unexpected spaces around keyword / parameter equals\n'}
+[4.041307] (pbvs_package) StdoutLine: {'line': b'        self.camera = CentralCamera.Default(pose = SE3.Trans(1, 1, -2))\n'}
+[4.041438] (pbvs_package) StdoutLine: {'line': b'                                                ^\n'}
+[4.041606] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.041741] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/FeatureExtractor.py:18:51: E251 unexpected spaces around keyword / parameter equals\n'}
+[4.041875] (pbvs_package) StdoutLine: {'line': b'        self.camera = CentralCamera.Default(pose = SE3.Trans(1, 1, -2))\n'}
+[4.042003] (pbvs_package) StdoutLine: {'line': b'                                                  ^\n'}
+[4.042121] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.042238] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/FeatureExtractor.py:18:52: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\n"}
+[4.042359] (pbvs_package) StdoutLine: {'line': b'        self.camera = CentralCamera.Default(pose = SE3.Trans(1, 1, -2))\n'}
+[4.042485] (pbvs_package) StdoutLine: {'line': b'                                                   ^\n'}
+[4.042603] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.042719] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/FeatureExtractor.py:19:18: F405 'mkgrid' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\n"}
+[4.042837] (pbvs_package) StdoutLine: {'line': b'        self.P = mkgrid(2, 0.5)\n'}
+[4.042954] (pbvs_package) StdoutLine: {'line': b'                 ^\n'}
+[4.043072] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.043192] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/FeatureExtractor.py:20:23: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\n"}
+[4.043312] (pbvs_package) StdoutLine: {'line': b'        self.pose_g = SE3.Trans(-1, -1, 2)\n'}
+[4.043430] (pbvs_package) StdoutLine: {'line': b'                      ^\n'}
+[4.043550] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.043670] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/FeatureExtractor.py:21:1: W293 blank line contains whitespace\n'}
+[4.043790] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.043910] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.044020] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.044127] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/FeatureExtractor.py:28:1: W293 blank line contains whitespace\n'}
+[4.044233] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.044341] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.044446] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.044552] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/FeatureExtractor.py:30:1: W293 blank line contains whitespace\n'}
+[4.044661] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.044767] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.044874] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.044980] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/FeatureExtractor.py:33:40: E231 missing whitespace after ','\n"}
+[4.045088] (pbvs_package) StdoutLine: {'line': b'        data = np.array(pose).reshape(4,4)\n'}
+[4.045196] (pbvs_package) StdoutLine: {'line': b'                                       ^\n'}
+[4.045303] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.045412] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/FeatureExtractor.py:34:9: E265 block comment should start with '# '\n"}
+[4.045547] (pbvs_package) StdoutLine: {'line': b"        #self.get_logger().info(f'Publishing: {data}')\n"}
+[4.045664] (pbvs_package) StdoutLine: {'line': b'        ^\n'}
+[4.045775] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.045886] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/FeatureExtractor.py:37:28: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\n"}
+[4.045999] (pbvs_package) StdoutLine: {'line': b'        self.camera.pose = SE3(data)\n'}
+[4.046110] (pbvs_package) StdoutLine: {'line': b'                           ^\n'}
+[4.046220] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.046331] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/FeatureExtractor.py:38:1: W293 blank line contains whitespace\n'}
+[4.046439] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.046547] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.046655] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.046764] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/FeatureExtractor.py:42:70: W291 trailing whitespace\n'}
+[4.046876] (pbvs_package) StdoutLine: {'line': b'        Te_C_G = self.camera.estpose(self.P, self.uv, frame="camera") \n'}
+[4.046984] (pbvs_package) StdoutLine: {'line': b'                                                                     ^\n'}
+[4.047094] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.047201] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/FeatureExtractor.py:46:34: W291 trailing whitespace\n'}
+[4.047308] (pbvs_package) StdoutLine: {'line': b'        msg = Float64MultiArray() \n'}
+[4.047416] (pbvs_package) StdoutLine: {'line': b'                                 ^\n'}
+[4.047526] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.047635] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/FeatureExtractor.py:51:1: W293 blank line contains whitespace\n'}
+[4.047744] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.047853] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.047960] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.048070] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/FeatureExtractor.py:52:1: E302 expected 2 blank lines, found 1\n'}
+[4.048182] (pbvs_package) StdoutLine: {'line': b'def main(args=None):\n'}
+[4.048293] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.048402] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.048509] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/FeatureExtractor.py:59:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[4.048620] (pbvs_package) StdoutLine: {'line': b"if __name__ == '__main__':\n"}
+[4.048730] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.048838] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.048947] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/FeatureExtractor.py:60:11: W292 no newline at end of file\n'}
+[4.049061] (pbvs_package) StdoutLine: {'line': b'    main()          ^\n'}
+[4.049173] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.049283] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/mainROS.py:2:1: F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names\n"}
+[4.049391] (pbvs_package) StdoutLine: {'line': b'from machinevisiontoolbox.base import *\n'}
+[4.049531] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.049646] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.049758] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/mainROS.py:2:1: F401 'machinevisiontoolbox.base.*' imported but unused\n"}
+[4.049870] (pbvs_package) StdoutLine: {'line': b'from machinevisiontoolbox.base import *\n'}
+[4.049978] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.050085] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.050190] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/mainROS.py:3:1: F403 'from machinevisiontoolbox import *' used; unable to detect undefined names\n"}
+[4.050291] (pbvs_package) StdoutLine: {'line': b'from machinevisiontoolbox import *\n'}
+[4.050398] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.050501] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.050599] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/mainROS.py:3:1: F401 'machinevisiontoolbox.*' imported but unused\n"}
+[4.050699] (pbvs_package) StdoutLine: {'line': b'from machinevisiontoolbox import *\n'}
+[4.050799] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.050898] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.050997] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/mainROS.py:4:1: F403 'from spatialmath.base import *' used; unable to detect undefined names\n"}
+[4.051102] (pbvs_package) StdoutLine: {'line': b'from spatialmath.base import *\n'}
+[4.051205] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.051305] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.051404] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/mainROS.py:4:1: F401 'spatialmath.base.*' imported but unused\n"}
+[4.051513] (pbvs_package) StdoutLine: {'line': b'from spatialmath.base import *\n'}
+[4.051613] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.051713] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.051810] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/mainROS.py:5:1: F403 'from spatialmath import *' used; unable to detect undefined names\n"}
+[4.051909] (pbvs_package) StdoutLine: {'line': b'from spatialmath import *\n'}
+[4.052014] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.052120] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.052528] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/mainROS.py:5:1: F401 'spatialmath.*' imported but unused\n"}
+[4.052666] (pbvs_package) StdoutLine: {'line': b'from spatialmath import *\n'}
+[4.052780] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.052893] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.053005] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/mainROS.py:8:1: E265 block comment should start with '# '\n"}
+[4.053117] (pbvs_package) StdoutLine: {'line': b'#camera = CentralCamera.Default(pose = SE3.Trans(1, 1, -2))\n'}
+[4.053221] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.053321] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.053421] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/mainROS.py:10:1: E265 block comment should start with '# '\n"}
+[4.053547] (pbvs_package) StdoutLine: {'line': b'#4 points-goal\n'}
+[4.053657] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.053762] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.053864] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/mainROS.py:12:1: E265 block comment should start with '# '\n"}
+[4.053965] (pbvs_package) StdoutLine: {'line': b'#P = mkgrid(2, 0.5)\n'}
+[4.054069] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.054175] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.054281] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/mainROS.py:15:1: E265 block comment should start with '# '\n"}
+[4.054389] (pbvs_package) StdoutLine: {'line': b'#pose_g=SE3.Trans(-1, -1, 2)\n'}
+[4.054496] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.054602] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.054705] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/mainROS.py:17:19: E261 at least two spaces before inline comment\n'}
+[4.054814] (pbvs_package) StdoutLine: {'line': b'pose_dParams = [1] #[0, 0, 1]\n'}
+[4.054968] (comm_package_test) StdoutLine: {'line': b'    \x1b[94massert\x1b[39;49;00m rc == \x1b[94m0\x1b[39;49;00m, \\\n'}
+[4.055150] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found 21 code style errors / warnings:\x1b[0m\n'}
+[4.055269] (comm_package_test) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./comm_package_test/subscriber.py:3:1: F401 'std_msgs.msg.Float64' imported but unused\x1b[0m\n"}
+[4.055384] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./comm_package_test/subscriber.py:7:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[4.055537] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./comm_package_test/subscriber.py:10:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.055655] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./comm_package_test/subscriber.py:17:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.055777] (comm_package_test) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./comm_package_test/subscriber.py:19:44: E231 missing whitespace after ','\x1b[0m\n"}
+[4.055890] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./comm_package_test/subscriber.py:21:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.056001] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./comm_package_test/subscriber.py:22:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.056170] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./comm_package_test/subscriber.py:29:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.056286] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./comm_package_test/subscriber.py:30:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[4.056504] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./comm_package_test/subscriber.py:31:11: W292 no newline at end of file\x1b[0m\n'}
+[4.056624] (comm_package_test) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./comm_package_test/publisher.py:3:1: F401 'std_msgs.msg.Float64' imported but unused\x1b[0m\n"}
+[4.056739] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./comm_package_test/publisher.py:7:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[4.056849] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./comm_package_test/publisher.py:10:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.056956] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./comm_package_test/publisher.py:14:27: E261 at least two spaces before inline comment\x1b[0m\n'}
+[4.057076] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./comm_package_test/publisher.py:17:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.057186] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./comm_package_test/publisher.py:25:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[4.057295] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./comm_package_test/publisher.py:31:1: W293 blank line contains whitespace\x1b[0m\n'}
+[4.057403] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./comm_package_test/publisher.py:32:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[4.057536] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./comm_package_test/publisher.py:33:11: W292 no newline at end of file\x1b[0m\n'}
+[4.057655] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/launcher.py:4:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[4.057765] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/launcher.py:12:7: W292 no newline at end of file\x1b[0m\n'}
+[4.057873] (comm_package_test) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[4.057980] (comm_package_test) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[4.058100] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.058214] (comm_package_test) StdoutLine: {'line': b"./comm_package_test/subscriber.py:3:1: F401 'std_msgs.msg.Float64' imported but unused\n"}
+[4.058507] (comm_package_test) StdoutLine: {'line': b'from std_msgs.msg import Float64\n'}
+[4.058626] (comm_package_test) StdoutLine: {'line': b'^\n'}
+[4.058736] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.058845] (comm_package_test) StdoutLine: {'line': b'./comm_package_test/subscriber.py:7:1: E302 expected 2 blank lines, found 1\n'}
+[4.058958] (comm_package_test) StdoutLine: {'line': b'class SubscriberNode(Node):\n'}
+[4.059068] (comm_package_test) StdoutLine: {'line': b'^\n'}
+[4.059183] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.059294] (comm_package_test) StdoutLine: {'line': b'./comm_package_test/subscriber.py:10:1: W293 blank line contains whitespace\n'}
+[4.059421] (comm_package_test) StdoutLine: {'line': b'        \n'}
+[4.059532] (comm_package_test) StdoutLine: {'line': b'^\n'}
+[4.059693] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.059811] (comm_package_test) StdoutLine: {'line': b'./comm_package_test/subscriber.py:17:1: W293 blank line contains whitespace\n'}
+[4.059930] (comm_package_test) StdoutLine: {'line': b'        \n'}
+[4.060045] (comm_package_test) StdoutLine: {'line': b'^\n'}
+[4.060155] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.060264] (comm_package_test) StdoutLine: {'line': b"./comm_package_test/subscriber.py:19:44: E231 missing whitespace after ','\n"}
+[4.060374] (comm_package_test) StdoutLine: {'line': b'        data = np.array(msg.data).reshape(4,4)\n'}
+[4.060550] (comm_package_test) StdoutLine: {'line': b'                                           ^\n'}
+[4.060673] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.060785] (comm_package_test) StdoutLine: {'line': b'./comm_package_test/subscriber.py:21:1: W293 blank line contains whitespace\n'}
+[4.060904] (comm_package_test) StdoutLine: {'line': b'        \n'}
+[4.061013] (comm_package_test) StdoutLine: {'line': b'^\n'}
+[4.061122] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.061230] (comm_package_test) StdoutLine: {'line': b'./comm_package_test/subscriber.py:22:1: W293 blank line contains whitespace\n'}
+[4.061338] (comm_package_test) StdoutLine: {'line': b'        \n'}
+[4.061447] (comm_package_test) StdoutLine: {'line': b'^\n'}
+[4.061590] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.061706] (comm_package_test) StdoutLine: {'line': b'./comm_package_test/subscriber.py:29:1: W293 blank line contains whitespace\n'}
+[4.061818] (comm_package_test) StdoutLine: {'line': b'    \n'}
+[4.061928] (comm_package_test) StdoutLine: {'line': b'^\n'}
+[4.062036] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.062144] (comm_package_test) StdoutLine: {'line': b'./comm_package_test/subscriber.py:30:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[4.062258] (comm_package_test) StdoutLine: {'line': b"if __name__ == '__main__':\n"}
+[4.062368] (comm_package_test) StdoutLine: {'line': b'^\n'}
+[4.062478] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.062585] (comm_package_test) StdoutLine: {'line': b'./comm_package_test/subscriber.py:31:11: W292 no newline at end of file\n'}
+[4.062693] (-) TimerEvent: {}
+[4.062908] (comm_package_test) StdoutLine: {'line': b'    main()          ^\n'}
+[4.063046] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.063163] (comm_package_test) StdoutLine: {'line': b"./comm_package_test/publisher.py:3:1: F401 'std_msgs.msg.Float64' imported but unused\n"}
+[4.063277] (comm_package_test) StdoutLine: {'line': b'from std_msgs.msg import Float64\n'}
+[4.063390] (comm_package_test) StdoutLine: {'line': b'^\n'}
+[4.063500] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.063611] (comm_package_test) StdoutLine: {'line': b'./comm_package_test/publisher.py:7:1: E302 expected 2 blank lines, found 1\n'}
+[4.063720] (comm_package_test) StdoutLine: {'line': b'class PublisherNode(Node):\n'}
+[4.063828] (comm_package_test) StdoutLine: {'line': b'^\n'}
+[4.063935] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.064043] (comm_package_test) StdoutLine: {'line': b'./comm_package_test/publisher.py:10:1: W293 blank line contains whitespace\n'}
+[4.064152] (comm_package_test) StdoutLine: {'line': b'        \n'}
+[4.064258] (comm_package_test) StdoutLine: {'line': b'^\n'}
+[4.064364] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.064471] (comm_package_test) StdoutLine: {'line': b'./comm_package_test/publisher.py:14:27: E261 at least two spaces before inline comment\n'}
+[4.064580] (comm_package_test) StdoutLine: {'line': b'        timer_period = 0.5 # Would this be like the step function?\n'}
+[4.064692] (comm_package_test) StdoutLine: {'line': b'                          ^\n'}
+[4.064800] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.064908] (comm_package_test) StdoutLine: {'line': b'./comm_package_test/publisher.py:17:1: W293 blank line contains whitespace\n'}
+[4.065018] (comm_package_test) StdoutLine: {'line': b'        \n'}
+[4.065127] (comm_package_test) StdoutLine: {'line': b'^\n'}
+[4.065245] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.065349] (comm_package_test) StdoutLine: {'line': b'./comm_package_test/publisher.py:25:1: E302 expected 2 blank lines, found 1\n'}
+[4.065468] (comm_package_test) StdoutLine: {'line': b'def main(args=None):\n'}
+[4.065590] (comm_package_test) StdoutLine: {'line': b'^\n'}
+[4.065704] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.065812] (comm_package_test) StdoutLine: {'line': b'./comm_package_test/publisher.py:31:1: W293 blank line contains whitespace\n'}
+[4.065921] (comm_package_test) StdoutLine: {'line': b'    \n'}
+[4.066030] (comm_package_test) StdoutLine: {'line': b'^\n'}
+[4.066139] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.066247] (comm_package_test) StdoutLine: {'line': b'./comm_package_test/publisher.py:32:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[4.066355] (comm_package_test) StdoutLine: {'line': b"if __name__ == '__main__':\n"}
+[4.066460] (comm_package_test) StdoutLine: {'line': b'^\n'}
+[4.066565] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.066670] (comm_package_test) StdoutLine: {'line': b'./comm_package_test/publisher.py:33:11: W292 no newline at end of file\n'}
+[4.066777] (comm_package_test) StdoutLine: {'line': b'    main()          ^\n'}
+[4.066885] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.066989] (comm_package_test) StdoutLine: {'line': b'./launch/launcher.py:4:1: E302 expected 2 blank lines, found 1\n'}
+[4.067096] (comm_package_test) StdoutLine: {'line': b'def generate_launch_description():\n'}
+[4.067201] (comm_package_test) StdoutLine: {'line': b'^\n'}
+[4.067309] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.067413] (comm_package_test) StdoutLine: {'line': b'./launch/launcher.py:12:7: W292 no newline at end of file\n'}
+[4.067519] (comm_package_test) StdoutLine: {'line': b'    ])      ^\n'}
+[4.067626] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.067729] (comm_package_test) StdoutLine: {'line': b"1     E231 missing whitespace after ','\n"}
+[4.067834] (comm_package_test) StdoutLine: {'line': b'1     E261 at least two spaces before inline comment\n'}
+[4.067939] (comm_package_test) StdoutLine: {'line': b'4     E302 expected 2 blank lines, found 1\n'}
+[4.068044] (comm_package_test) StdoutLine: {'line': b'2     E305 expected 2 blank lines after class or function definition, found 1\n'}
+[4.068149] (comm_package_test) StdoutLine: {'line': b"2     F401 'std_msgs.msg.Float64' imported but unused\n"}
+[4.068501] (comm_package_test) StdoutLine: {'line': b'3     W292 no newline at end of file\n'}
+[4.068625] (comm_package_test) StdoutLine: {'line': b'8     W293 blank line contains whitespace\n'}
+[4.068737] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.068847] (comm_package_test) StdoutLine: {'line': b'8 files checked\n'}
+[4.068955] (comm_package_test) StdoutLine: {'line': b'21 errors\n'}
+[4.069066] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.069176] (comm_package_test) StdoutLine: {'line': b"'E'-type errors: 8\n"}
+[4.069291] (comm_package_test) StdoutLine: {'line': b"'F'-type errors: 2\n"}
+[4.069404] (comm_package_test) StdoutLine: {'line': b"'W'-type errors: 11\n"}
+[4.069541] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.069657] (comm_package_test) StdoutLine: {'line': b'Checked files:\n'}
+[4.069770] (comm_package_test) StdoutLine: {'line': b'\n'}
+[4.069881] (comm_package_test) StdoutLine: {'line': b'* ./setup.py\n'}
+[4.069992] (comm_package_test) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[4.070102] (comm_package_test) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[4.070212] (comm_package_test) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[4.070321] (comm_package_test) StdoutLine: {'line': b'* ./comm_package_test/__init__.py\n'}
+[4.070429] (comm_package_test) StdoutLine: {'line': b'* ./comm_package_test/subscriber.py\n'}
+[4.070536] (comm_package_test) StdoutLine: {'line': b'* ./comm_package_test/publisher.py\n'}
+[4.070645] (comm_package_test) StdoutLine: {'line': b'* ./launch/launcher.py\n'}
+[4.070756] (comm_package_test) StdoutLine: {'line': b'----------------------------- Captured stderr call -----------------------------\n'}
+[4.070867] (comm_package_test) StdoutLine: {'line': b'option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future\n'}
+[4.070977] (comm_package_test) StdoutLine: {'line': b'- generated xml file: /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/pytest.xml -\n'}
+[4.071087] (comm_package_test) StdoutLine: {'line': b'=========================== short test summary info ============================\n'}
+[4.071196] (comm_package_test) StdoutLine: {'line': b'FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 21 code style...\n'}
+[4.071304] (comm_package_test) StdoutLine: {'line': b'\x1b[31m============== \x1b[31m\x1b[1m1 failed\x1b[0m, \x1b[32m1 passed\x1b[0m, \x1b[33m1 skipped\x1b[0m, \x1b[33m2 warnings\x1b[0m\x1b[31m in 0.70s\x1b[0m\x1b[31m ==============\x1b[0m\n'}
+[4.071416] (pbvs_package) StdoutLine: {'line': b'                  ^\n'}
+[4.071535] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.071644] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/mainROS.py:17:20: E262 inline comment should start with '# '\n"}
+[4.071804] (pbvs_package) StdoutLine: {'line': b'pose_dParams = [1] #[0, 0, 1]\n'}
+[4.071922] (pbvs_package) StdoutLine: {'line': b'                   ^\n'}
+[4.072112] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.072251] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/mainROS.py:18:1: E265 block comment should start with '# '\n"}
+[4.072374] (pbvs_package) StdoutLine: {'line': b'#pose_d=SE3.Tz(1) #SE3(0, 0, 1)\n'}
+[4.072548] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.072668] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.072784] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/mainROS.py:20:8: E225 missing whitespace around operator\n'}
+[4.072898] (pbvs_package) StdoutLine: {'line': b'plotvol=[-1, 2, -1, 2, -3, 2.5]\n'}
+[4.073012] (pbvs_package) StdoutLine: {'line': b'       ^\n'}
+[4.073127] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.073236] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/mainROS.py:22:1: E265 block comment should start with '# '\n"}
+[4.073345] (pbvs_package) StdoutLine: {'line': b'#pbvs = V_PBVS(camera=camera, P=P, pose_g=pose_g, pose_d=pose_d, plotvol=plotvol)\n'}
+[4.073468] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.073592] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.073706] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/mainROS.py:23:1: E265 block comment should start with '# '\n"}
+[4.073820] (pbvs_package) StdoutLine: {'line': b'#pbvs.run(20) # Run the simulation for 20 steps, activaete the loop that iterate the function step 20 times.\n'}
+[4.073932] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.074041] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.074148] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/mainROS.py:23:100: E501 line too long (108 > 99 characters)\n'}
+[4.074257] (pbvs_package) StdoutLine: {'line': b'#pbvs.run(20) # Run the simulation for 20 steps, activaete the loop that iterate the function step 20 times.\n'}
+[4.074367] (pbvs_package) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[4.074475] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.074581] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/mainROS.py:25:1: W391 blank line at end of file\n'}
+[4.074689] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.074796] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.074902] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.075008] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/actuator.py:3:1: F401 'std_msgs.msg.Float64' imported but unused\n"}
+[4.075116] (pbvs_package) StdoutLine: {'line': b'from std_msgs.msg import Float64\n'}
+[4.075223] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.075331] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.075436] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/actuator.py:7:1: F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names\n"}
+[4.075552] (pbvs_package) StdoutLine: {'line': b'from machinevisiontoolbox.base import *\n'}
+[4.075661] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.075765] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.075872] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/actuator.py:8:1: F403 'from machinevisiontoolbox import *' used; unable to detect undefined names\n"}
+[4.075983] (pbvs_package) StdoutLine: {'line': b'from machinevisiontoolbox import *\n'}
+[4.076091] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.076195] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.076300] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/actuator.py:9:1: F403 'from spatialmath.base import *' used; unable to detect undefined names\n"}
+[4.076407] (pbvs_package) StdoutLine: {'line': b'from spatialmath.base import *\n'}
+[4.076511] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.076620] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.076728] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/actuator.py:10:1: F403 'from spatialmath import *' used; unable to detect undefined names\n"}
+[4.076837] (pbvs_package) StdoutLine: {'line': b'from spatialmath import *\n'}
+[4.076946] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.077051] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.077159] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/actuator.py:12:1: W293 blank line contains whitespace\n'}
+[4.077267] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.077374] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.077519] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.077635] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/actuator.py:23:1: W293 blank line contains whitespace\n'}
+[4.077747] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.077906] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.078032] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.078144] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/actuator.py:24:100: E501 line too long (101 > 99 characters)\n'}
+[4.078258] (pbvs_package) StdoutLine: {'line': b"        actuatorParams = self.get_parameter('actuatorParams').get_parameter_value().float_array_value\n"}
+[4.078370] (pbvs_package) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[4.078480] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.078586] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/actuator.py:25:23: F405 'CentralCamera' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\n"}
+[4.078698] (pbvs_package) StdoutLine: {'line': b'        self.camera = CentralCamera.Default(pose = SE3.Trans(actuatorParams[0][0], actuatorParams[0][1], actuatorParams[0][2]))\n'}
+[4.078806] (pbvs_package) StdoutLine: {'line': b'                      ^\n'}
+[4.078913] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.079019] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/actuator.py:25:49: E251 unexpected spaces around keyword / parameter equals\n'}
+[4.079127] (pbvs_package) StdoutLine: {'line': b'        self.camera = CentralCamera.Default(pose = SE3.Trans(actuatorParams[0][0], actuatorParams[0][1], actuatorParams[0][2]))\n'}
+[4.079244] (pbvs_package) StdoutLine: {'line': b'                                                ^\n'}
+[4.079352] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.079457] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/actuator.py:25:51: E251 unexpected spaces around keyword / parameter equals\n'}
+[4.079567] (pbvs_package) StdoutLine: {'line': b'        self.camera = CentralCamera.Default(pose = SE3.Trans(actuatorParams[0][0], actuatorParams[0][1], actuatorParams[0][2]))\n'}
+[4.079673] (pbvs_package) StdoutLine: {'line': b'                                                  ^\n'}
+[4.079778] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.079920] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/actuator.py:25:52: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\n"}
+[4.080169] (pbvs_package) StdoutLine: {'line': b'        self.camera = CentralCamera.Default(pose = SE3.Trans(actuatorParams[0][0], actuatorParams[0][1], actuatorParams[0][2]))\n'}
+[4.080370] (pbvs_package) StdoutLine: {'line': b'                                                   ^\n'}
+[4.080550] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.080664] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/actuator.py:25:100: E501 line too long (127 > 99 characters)\n'}
+[4.080779] (pbvs_package) StdoutLine: {'line': b'        self.camera = CentralCamera.Default(pose = SE3.Trans(actuatorParams[0][0], actuatorParams[0][1], actuatorParams[0][2]))\n'}
+[4.080894] (pbvs_package) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[4.081009] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.081118] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/actuator.py:27:1: W293 blank line contains whitespace\n'}
+[4.081228] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.081336] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.081447] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.081586] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/actuator.py:29:1: W293 blank line contains whitespace\n'}
+[4.081702] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.081812] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.081920] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.082029] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/actuator.py:30:39: E261 at least two spaces before inline comment\n'}
+[4.082136] (pbvs_package) StdoutLine: {'line': b'    def apply_velocity(self, T_delta): # T_delta is the received message no es un float\n'}
+[4.082243] (pbvs_package) StdoutLine: {'line': b'                                      ^\n'}
+[4.082349] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.082454] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/actuator.py:31:19: F405 'SE3' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\n"}
+[4.082565] (pbvs_package) StdoutLine: {'line': b'        T_delta = SE3(np.array(T_delta)) # convert to numpy array and then to a spatial math pose\n'}
+[4.082676] (pbvs_package) StdoutLine: {'line': b'                  ^\n'}
+[4.082784] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.082889] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/actuator.py:31:41: E261 at least two spaces before inline comment\n'}
+[4.082998] (pbvs_package) StdoutLine: {'line': b'        T_delta = SE3(np.array(T_delta)) # convert to numpy array and then to a spatial math pose\n'}
+[4.083104] (pbvs_package) StdoutLine: {'line': b'                                        ^\n'}
+[4.083214] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.083319] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/actuator.py:32:41: W291 trailing whitespace\n'}
+[4.083423] (pbvs_package) StdoutLine: {'line': b'        Td = T_delta.interp1(self.lmbda)  \n'}
+[4.083529] (pbvs_package) StdoutLine: {'line': b'                                        ^\n'}
+[4.083635] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.083742] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/actuator.py:34:1: W293 blank line contains whitespace\n'}
+[4.083848] (pbvs_package) StdoutLine: {'line': b'        \n'}
+[4.083951] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.084056] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.084159] (pbvs_package) StdoutLine: {'line': b"./pbvs_package/actuator.py:38:26: F405 'PBVS_actuatorNode' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\n"}
+[4.084269] (pbvs_package) StdoutLine: {'line': b'    PBVS_actuator_node = PBVS_actuatorNode()\n'}
+[4.084375] (pbvs_package) StdoutLine: {'line': b'                         ^\n'}
+[4.084547] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.084662] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/actuator.py:43:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[4.084792] (pbvs_package) StdoutLine: {'line': b"if __name__ == '__main__':\n"}
+[4.084901] (pbvs_package) StdoutLine: {'line': b'^\n'}
+[4.085007] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.085113] (pbvs_package) StdoutLine: {'line': b'./pbvs_package/actuator.py:44:11: W292 no newline at end of file\n'}
+[4.085222] (pbvs_package) StdoutLine: {'line': b'    main()          ^\n'}
+[4.085331] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.085437] (pbvs_package) StdoutLine: {'line': b"1     E202 whitespace before ')'\n"}
+[4.085570] (pbvs_package) StdoutLine: {'line': b'1     E225 missing whitespace around operator\n'}
+[4.085684] (pbvs_package) StdoutLine: {'line': b"2     E231 missing whitespace after ','\n"}
+[4.085793] (pbvs_package) StdoutLine: {'line': b'4     E251 unexpected spaces around keyword / parameter equals\n'}
+[4.085904] (pbvs_package) StdoutLine: {'line': b'6     E261 at least two spaces before inline comment\n'}
+[4.086014] (pbvs_package) StdoutLine: {'line': b"2     E262 inline comment should start with '# '\n"}
+[4.086122] (pbvs_package) StdoutLine: {'line': b"8     E265 block comment should start with '# '\n"}
+[4.086232] (pbvs_package) StdoutLine: {'line': b'4     E302 expected 2 blank lines, found 1\n'}
+[4.086340] (pbvs_package) StdoutLine: {'line': b'3     E305 expected 2 blank lines after class or function definition, found 1\n'}
+[4.086450] (pbvs_package) StdoutLine: {'line': b'3     E501 line too long (101 > 99 characters)\n'}
+[4.086558] (pbvs_package) StdoutLine: {'line': b"6     F401 'std_msgs.msg.Float64' imported but unused\n"}
+[4.086668] (pbvs_package) StdoutLine: {'line': b"16    F403 'from machinevisiontoolbox.base import *' used; unable to detect undefined names\n"}
+[4.086779] (pbvs_package) StdoutLine: {'line': b"11    F405 'CentralCamera' may be undefined, or defined from star imports: machinevisiontoolbox, machinevisiontoolbox.base, spatialmath, spatialmath.base\n"}
+[4.086888] (pbvs_package) StdoutLine: {'line': b"1     F811 redefinition of unused 'np' from line 5\n"}
+[4.086998] (pbvs_package) StdoutLine: {'line': b'4     W291 trailing whitespace\n'}
+[4.087112] (pbvs_package) StdoutLine: {'line': b'3     W292 no newline at end of file\n'}
+[4.087220] (pbvs_package) StdoutLine: {'line': b'18    W293 blank line contains whitespace\n'}
+[4.087328] (pbvs_package) StdoutLine: {'line': b'1     W391 blank line at end of file\n'}
+[4.087437] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.087543] (pbvs_package) StdoutLine: {'line': b'10 files checked\n'}
+[4.087650] (pbvs_package) StdoutLine: {'line': b'94 errors\n'}
+[4.087756] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.087860] (pbvs_package) StdoutLine: {'line': b"'E'-type errors: 34\n"}
+[4.087968] (pbvs_package) StdoutLine: {'line': b"'F'-type errors: 34\n"}
+[4.088076] (pbvs_package) StdoutLine: {'line': b"'W'-type errors: 26\n"}
+[4.088181] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.088287] (pbvs_package) StdoutLine: {'line': b'Checked files:\n'}
+[4.088391] (pbvs_package) StdoutLine: {'line': b'\n'}
+[4.088498] (pbvs_package) StdoutLine: {'line': b'* ./setup.py\n'}
+[4.088604] (pbvs_package) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[4.088710] (pbvs_package) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[4.088816] (pbvs_package) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[4.088923] (pbvs_package) StdoutLine: {'line': b'* ./pbvs_package/launcher.py\n'}
+[4.089029] (pbvs_package) StdoutLine: {'line': b'* ./pbvs_package/controller.py\n'}
+[4.089134] (pbvs_package) StdoutLine: {'line': b'* ./pbvs_package/__init__.py\n'}
+[4.089240] (pbvs_package) StdoutLine: {'line': b'* ./pbvs_package/FeatureExtractor.py\n'}
+[4.089346] (pbvs_package) StdoutLine: {'line': b'* ./pbvs_package/mainROS.py\n'}
+[4.089453] (pbvs_package) StdoutLine: {'line': b'* ./pbvs_package/actuator.py\n'}
+[4.089648] (pbvs_package) StdoutLine: {'line': b'----------------------------- Captured stderr call -----------------------------\n'}
+[4.089767] (pbvs_package) StdoutLine: {'line': b'option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future\n'}
+[4.089888] (pbvs_package) StdoutLine: {'line': b'- generated xml file: /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs_package/pytest.xml -\n'}
+[4.090000] (pbvs_package) StdoutLine: {'line': b'=========================== short test summary info ============================\n'}
+[4.090110] (pbvs_package) StdoutLine: {'line': b'FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 94 code style...\n'}
+[4.090220] (pbvs_package) StdoutLine: {'line': b'\x1b[31m============== \x1b[31m\x1b[1m1 failed\x1b[0m, \x1b[32m1 passed\x1b[0m, \x1b[33m1 skipped\x1b[0m, \x1b[33m2 warnings\x1b[0m\x1b[31m in 0.70s\x1b[0m\x1b[31m ==============\x1b[0m\n'}
+[4.090347] (pbvs_package) StderrLine: {'line': b'\x1b[33m=============================== warnings summary ===============================\x1b[0m\n'}
+[4.090489] (pbvs_package) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[4.090602] (pbvs_package) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[4.090714] (pbvs_package) StderrLine: {'line': b'  Warning: SelectableGroups dict interface is deprecated. Use select.\n'}
+[4.090825] (pbvs_package) StderrLine: {'line': b'\n'}
+[4.090933] (pbvs_package) StderrLine: {'line': b'-- Docs: https://docs.pytest.org/en/stable/warnings.html\n'}
+[4.163087] (-) TimerEvent: {}
+[4.264529] (-) TimerEvent: {}
+[4.307039] (comm_package_test) CommandEnded: {'returncode': 1}
+[4.308074] (comm_package_test) TestFailure: {'identifier': 'comm_package_test'}
+[4.308160] (comm_package_test) JobEnded: {'identifier': 'comm_package_test', 'rc': 0}
+[4.336357] (pbvs_package) CommandEnded: {'returncode': 1}
+[4.339393] (pbvs_package) TestFailure: {'identifier': 'pbvs_package'}
+[4.339470] (pbvs_package) JobEnded: {'identifier': 'pbvs_package', 'rc': 0}
+[4.345226] (-) EventReactorShutdown: {}

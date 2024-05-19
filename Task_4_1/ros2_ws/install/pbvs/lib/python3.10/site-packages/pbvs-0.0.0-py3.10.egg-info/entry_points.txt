@@ -1,0 +1,5 @@
+[console_scripts]
+actuator = pbvs.actuator:main
+controller = pbvs.controller:main
+feature_extractor = pbvs.feature_extractor:main
+

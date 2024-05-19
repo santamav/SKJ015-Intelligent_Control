@@ -1,0 +1,159 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/.pytest_cache
+rootdir: /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/comm_package_test
+plugins: ament-copyright-0.12.10, ament-pep257-0.12.10, ament-xmllint-0.12.10, launch-testing-1.0.5, ament-lint-0.12.10, launch-testing-ros-0.19.7, ament-flake8-0.12.10, dash-2.16.1, cov-3.0.0, colcon-core-0.16.1
+[1mcollecting ... [0m[1m
+collected 3 items                                                              [0m
+
+test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m_________________________________ test_flake8 __________________________________[0m
+[1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[33m=============================== warnings summary ===============================[0m
+test/test_flake8.py::test_flake8
+test/test_flake8.py::test_flake8
+  Warning: SelectableGroups dict interface is deprecated. Use select.
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+    [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[1m[31mE   AssertionError: Found 21 code style errors / warnings:[0m
+[1m[31mE     ./comm_package_test/subscriber.py:3:1: F401 'std_msgs.msg.Float64' imported but unused[0m
+[1m[31mE     ./comm_package_test/subscriber.py:7:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./comm_package_test/subscriber.py:10:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./comm_package_test/subscriber.py:17:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./comm_package_test/subscriber.py:19:44: E231 missing whitespace after ','[0m
+[1m[31mE     ./comm_package_test/subscriber.py:21:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./comm_package_test/subscriber.py:22:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./comm_package_test/subscriber.py:29:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./comm_package_test/subscriber.py:30:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[1m[31mE     ./comm_package_test/subscriber.py:31:11: W292 no newline at end of file[0m
+[1m[31mE     ./comm_package_test/publisher.py:3:1: F401 'std_msgs.msg.Float64' imported but unused[0m
+[1m[31mE     ./comm_package_test/publisher.py:7:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./comm_package_test/publisher.py:10:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./comm_package_test/publisher.py:14:27: E261 at least two spaces before inline comment[0m
+[1m[31mE     ./comm_package_test/publisher.py:17:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./comm_package_test/publisher.py:25:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./comm_package_test/publisher.py:31:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./comm_package_test/publisher.py:32:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[1m[31mE     ./comm_package_test/publisher.py:33:11: W292 no newline at end of file[0m
+[1m[31mE     ./launch/launcher.py:4:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./launch/launcher.py:12:7: W292 no newline at end of file[0m
+[1m[31mE   assert 1 == 0[0m
+----------------------------- Captured stdout call -----------------------------
+
+./comm_package_test/subscriber.py:3:1: F401 'std_msgs.msg.Float64' imported but unused
+from std_msgs.msg import Float64
+^
+
+./comm_package_test/subscriber.py:7:1: E302 expected 2 blank lines, found 1
+class SubscriberNode(Node):
+^
+
+./comm_package_test/subscriber.py:10:1: W293 blank line contains whitespace
+        
+^
+
+./comm_package_test/subscriber.py:17:1: W293 blank line contains whitespace
+        
+^
+
+./comm_package_test/subscriber.py:19:44: E231 missing whitespace after ','
+        data = np.array(msg.data).reshape(4,4)
+                                           ^
+
+./comm_package_test/subscriber.py:21:1: W293 blank line contains whitespace
+        
+^
+
+./comm_package_test/subscriber.py:22:1: W293 blank line contains whitespace
+        
+^
+
+./comm_package_test/subscriber.py:29:1: W293 blank line contains whitespace
+    
+^
+
+./comm_package_test/subscriber.py:30:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == '__main__':
+^
+
+./comm_package_test/subscriber.py:31:11: W292 no newline at end of file
+    main()          ^
+
+./comm_package_test/publisher.py:3:1: F401 'std_msgs.msg.Float64' imported but unused
+from std_msgs.msg import Float64
+^
+
+./comm_package_test/publisher.py:7:1: E302 expected 2 blank lines, found 1
+class PublisherNode(Node):
+^
+
+./comm_package_test/publisher.py:10:1: W293 blank line contains whitespace
+        
+^
+
+./comm_package_test/publisher.py:14:27: E261 at least two spaces before inline comment
+        timer_period = 0.5 # Would this be like the step function?
+                          ^
+
+./comm_package_test/publisher.py:17:1: W293 blank line contains whitespace
+        
+^
+
+./comm_package_test/publisher.py:25:1: E302 expected 2 blank lines, found 1
+def main(args=None):
+^
+
+./comm_package_test/publisher.py:31:1: W293 blank line contains whitespace
+    
+^
+
+./comm_package_test/publisher.py:32:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == '__main__':
+^
+
+./comm_package_test/publisher.py:33:11: W292 no newline at end of file
+    main()          ^
+
+./launch/launcher.py:4:1: E302 expected 2 blank lines, found 1
+def generate_launch_description():
+^
+
+./launch/launcher.py:12:7: W292 no newline at end of file
+    ])      ^
+
+1     E231 missing whitespace after ','
+1     E261 at least two spaces before inline comment
+4     E302 expected 2 blank lines, found 1
+2     E305 expected 2 blank lines after class or function definition, found 1
+2     F401 'std_msgs.msg.Float64' imported but unused
+3     W292 no newline at end of file
+8     W293 blank line contains whitespace
+
+8 files checked
+21 errors
+
+'E'-type errors: 8
+'F'-type errors: 2
+'W'-type errors: 11
+
+Checked files:
+
+* ./setup.py
+* ./test/test_pep257.py
+* ./test/test_copyright.py
+* ./test/test_flake8.py
+* ./comm_package_test/__init__.py
+* ./comm_package_test/subscriber.py
+* ./comm_package_test/publisher.py
+* ./launch/launcher.py
+----------------------------- Captured stderr call -----------------------------
+option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+- generated xml file: /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/comm_package_test/pytest.xml -
+=========================== short test summary info ============================
+FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 21 code style...
+[31m============== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m, [33m2 warnings[0m[31m in 0.70s[0m[31m ==============[0m

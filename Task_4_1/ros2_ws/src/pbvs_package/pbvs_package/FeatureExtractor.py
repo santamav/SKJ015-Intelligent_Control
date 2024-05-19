@@ -46,7 +46,6 @@ class PBVS_FeatureNode(Node):
         msg = Float64MultiArray() 
         msg.data = Te_C_G
         self.get_logger().info(f'Publishing: {msg.data}')
-
         self.publisher_.publish(msg)
         
 def main(args=None):

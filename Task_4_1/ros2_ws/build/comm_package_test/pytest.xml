@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="1" tests="3" time="0.649" timestamp="2024-05-19T12:29:09.090337" hostname="sjk015-VirtualBox"><testcase classname="comm_package_test.test.test_copyright" name="test_copyright" time="0.001"><skipped type="pytest.skip" message="No copyright header has been placed in the generated source file.">/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/comm_package_test/test/test_copyright.py:20: No copyright header has been placed in the generated source file.</skipped></testcase><testcase classname="comm_package_test.test.test_flake8" name="test_flake8" time="0.220"><failure message="AssertionError: Found 21 code style errors / warnings:&#10;  ./comm_package_test/subscriber.py:3:1: F401 'std_msgs.msg.Float64' imported but unused&#10;  ./comm_package_test/subscriber.py:7:1: E302 expected 2 blank lines, found 1&#10;  ./comm_package_test/subscriber.py:10:1: W293 blank line contains whitespace&#10;  ./comm_package_test/subscriber.py:17:1: W293 blank line contains whitespace&#10;  ./comm_package_test/subscriber.py:19:44: E231 missing whitespace after ','&#10;  ./comm_package_test/subscriber.py:21:1: W293 blank line contains whitespace&#10;  ./comm_package_test/subscriber.py:22:1: W293 blank line contains whitespace&#10;  ./comm_package_test/subscriber.py:29:1: W293 blank line contains whitespace&#10;  ./comm_package_test/subscriber.py:30:1: E305 expected 2 blank lines after class or function definition, found 1&#10;  ./comm_package_test/subscriber.py:31:11: W292 no newline at end of file&#10;  ./comm_package_test/publisher.py:3:1: F401 'std_msgs.msg.Float64' imported but unused&#10;  ./comm_package_test/publisher.py:7:1: E302 expected 2 blank lines, found 1&#10;  ./comm_package_test/publisher.py:10:1: W293 blank line contains whitespace&#10;  ./comm_package_test/publisher.py:14:27: E261 at least two spaces before inline comment&#10;  ./comm_package_test/publisher.py:17:1: W293 blank line contains whitespace&#10;  ./comm_package_test/publisher.py:25:1: E302 expected 2 blank lines, found 1&#10;  ./comm_package_test/publisher.py:31:1: W293 blank line contains whitespace&#10;  ./comm_package_test/publisher.py:32:1: E305 expected 2 blank lines after class or function definition, found 1&#10;  ./comm_package_test/publisher.py:33:11: W292 no newline at end of file&#10;  ./launch/launcher.py:4:1: E302 expected 2 blank lines, found 1&#10;  ./launch/launcher.py:12:7: W292 no newline at end of file&#10;assert 1 == 0">test/test_flake8.py:23: in test_flake8
+    assert rc == 0, \
+E   AssertionError: Found 21 code style errors / warnings:
+E     ./comm_package_test/subscriber.py:3:1: F401 'std_msgs.msg.Float64' imported but unused
+E     ./comm_package_test/subscriber.py:7:1: E302 expected 2 blank lines, found 1
+E     ./comm_package_test/subscriber.py:10:1: W293 blank line contains whitespace
+E     ./comm_package_test/subscriber.py:17:1: W293 blank line contains whitespace
+E     ./comm_package_test/subscriber.py:19:44: E231 missing whitespace after ','
+E     ./comm_package_test/subscriber.py:21:1: W293 blank line contains whitespace
+E     ./comm_package_test/subscriber.py:22:1: W293 blank line contains whitespace
+E     ./comm_package_test/subscriber.py:29:1: W293 blank line contains whitespace
+E     ./comm_package_test/subscriber.py:30:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./comm_package_test/subscriber.py:31:11: W292 no newline at end of file
+E     ./comm_package_test/publisher.py:3:1: F401 'std_msgs.msg.Float64' imported but unused
+E     ./comm_package_test/publisher.py:7:1: E302 expected 2 blank lines, found 1
+E     ./comm_package_test/publisher.py:10:1: W293 blank line contains whitespace
+E     ./comm_package_test/publisher.py:14:27: E261 at least two spaces before inline comment
+E     ./comm_package_test/publisher.py:17:1: W293 blank line contains whitespace
+E     ./comm_package_test/publisher.py:25:1: E302 expected 2 blank lines, found 1
+E     ./comm_package_test/publisher.py:31:1: W293 blank line contains whitespace
+E     ./comm_package_test/publisher.py:32:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./comm_package_test/publisher.py:33:11: W292 no newline at end of file
+E     ./launch/launcher.py:4:1: E302 expected 2 blank lines, found 1
+E     ./launch/launcher.py:12:7: W292 no newline at end of file
+E   assert 1 == 0</failure></testcase><testcase classname="comm_package_test.test.test_pep257" name="test_pep257" time="0.036" /></testsuite></testsuites>

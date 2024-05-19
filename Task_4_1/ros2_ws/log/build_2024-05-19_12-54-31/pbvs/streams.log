@@ -1,0 +1,26 @@
+[1.166s] Invoking command in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/pbvs': PYTHONPATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/prefix_override:/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pbvs build --build-base /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/build install --record /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/install.log --single-version-externally-managed install_data
+[1.566s] running egg_info
+[1.567s] writing ../../build/pbvs/pbvs.egg-info/PKG-INFO
+[1.567s] writing dependency_links to ../../build/pbvs/pbvs.egg-info/dependency_links.txt
+[1.568s] writing entry points to ../../build/pbvs/pbvs.egg-info/entry_points.txt
+[1.568s] writing requirements to ../../build/pbvs/pbvs.egg-info/requires.txt
+[1.568s] writing top-level names to ../../build/pbvs/pbvs.egg-info/top_level.txt
+[1.572s] reading manifest file '../../build/pbvs/pbvs.egg-info/SOURCES.txt'
+[1.572s] adding license file 'LICENSE'
+[1.574s] writing manifest file '../../build/pbvs/pbvs.egg-info/SOURCES.txt'
+[1.574s] running build
+[1.574s] running build_py
+[1.574s] copying pbvs/feature_extractor.py -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/build/lib/pbvs
+[1.575s] running install
+[1.576s] running install_lib
+[1.577s] copying /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/build/lib/pbvs/feature_extractor.py -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages/pbvs
+[1.578s] byte-compiling /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages/pbvs/feature_extractor.py to feature_extractor.cpython-310.pyc
+[1.579s] running install_data
+[1.580s] running install_egg_info
+[1.583s] removing '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages/pbvs-0.0.0-py3.10.egg-info' (and everything under it)
+[1.583s] Copying ../../build/pbvs/pbvs.egg-info to /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages/pbvs-0.0.0-py3.10.egg-info
+[1.585s] running install_scripts
+[1.618s] Installing feature_extractor script to /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/pbvs
+[1.618s] Installing main script to /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/pbvs
+[1.619s] writing list of installed files to '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/install.log'
+[1.652s] Invoked command in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/pbvs' returned '0': PYTHONPATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/prefix_override:/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pbvs build --build-base /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/build install --record /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/install.log --single-version-externally-managed install_data
