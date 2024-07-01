@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 
 from std_msgs.msg import Float64MultiArray
-
+from std_msgs.msg import Bool
 
 from machinevisiontoolbox.base import *
 from machinevisiontoolbox import *
@@ -16,7 +16,7 @@ class Actuator(Node):
         super().__init__('actuator')
         
         self.camera = CentralCamera.Default(pose = SE3.Trans(1, 1, -2))
-        self.lmbda = 1
+        self.lmbda = 0.05
         
         # Prepare publisher
         self.publisher_ = self.create_publisher(Float64MultiArray, 'camera_pose', 10)
@@ -26,6 +26,13 @@ class Actuator(Node):
             Float64MultiArray,
             'delta',
             self.apply_velocity,
+            10
+        )
+        
+        self.subscription_stop = self.create_subscription(
+            Bool,
+            'stop',
+            self.stop,
             10
         )
         
@@ -47,7 +54,10 @@ class Actuator(Node):
         while(time.time() - start_time < 1):
             pass """
         self.publisher_.publish(msg)
-        
+    
+    def stop(self, msg):
+        self.get_logger().info('Stopping the actuator...')
+        rclpy.shutdown()
         
 def main(args = None):
     rclpy.init(args=args) # initialize the ROS2 client library

@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 
 from std_msgs.msg import Float64MultiArray
-
+from std_msgs.msg import Bool
 
 from machinevisiontoolbox.base import *
 from machinevisiontoolbox import *
@@ -25,6 +25,14 @@ class FeatureExtractor(Node):
             Float64MultiArray,
             'camera_pose',
             self.update_camera_pose,
+            10
+        )
+        
+        # Subscribe to stop topic
+        self.subscription_stop = self.create_subscription(
+            Bool,
+            'stop',
+            self.stop,
             10
         )
         
@@ -57,6 +65,11 @@ class FeatureExtractor(Node):
         self.camera.pose = SE3(data)
         # Call the compute pose function
         self.compute_pose()
+        
+    def stop(self, msg):
+        # Stop the node
+        self.get_logger().info('Stopping the feature extractor...')
+        rclpy.shutdown()
 
 def main(args = None):
     rclpy.init(args=args) # initialize the ROS2 client library

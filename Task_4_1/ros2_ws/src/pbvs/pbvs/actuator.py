@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 
 from std_msgs.msg import Float64MultiArray
-
+from std_msgs.msg import Bool
 
 from machinevisiontoolbox.base import *
 from machinevisiontoolbox import *
@@ -29,6 +29,13 @@ class Actuator(Node):
             10
         )
         
+        self.subscription_stop = self.create_subscription(
+            Bool,
+            'stop',
+            self.stop,
+            10
+        )
+        
     def apply_velocity(self, msg):
         # Reshape data to 4x4 matrix
         data = np.array(msg.data).reshape(4,4)
@@ -47,7 +54,10 @@ class Actuator(Node):
         while(time.time() - start_time < 1):
             pass """
         self.publisher_.publish(msg)
-        
+    
+    def stop(self, msg):
+        self.get_logger().info('Stopping the actuator...')
+        rclpy.shutdown()
         
 def main(args = None):
     rclpy.init(args=args) # initialize the ROS2 client library

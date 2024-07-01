@@ -1,8 +1,11 @@
 import rclpy
 from rclpy.node import Node
 
+import rclpy.signals
 from std_msgs.msg import Float64MultiArray
+from std_msgs.msg import Bool
 
+import sys
 
 from machinevisiontoolbox.base import *
 from machinevisiontoolbox import *
@@ -13,7 +16,8 @@ class Controller(Node):
     def __init__(self):
         super().__init__('controller')
         self.lmbda = 0.05
-        self.eterm = 0.001
+        #self.eterm = 0.001
+        self.eterm = 2.001
         self.pose_d = SE3(0, 0, 1)
         
         # Prepare subscriber
@@ -26,6 +30,7 @@ class Controller(Node):
         
         # Prepare the publisher
         self.publisher_ = self.create_publisher(Float64MultiArray, 'delta', 10)
+        self.publisher_stop = self.create_publisher(Bool, 'stop', 10)
         
     def compute_delta(self, msg):
         # Reshape data to 4x4 matrix
@@ -40,12 +45,18 @@ class Controller(Node):
         
         # Check if the error is less than the threshold
         self.get_logger().info('Norm: %s' % np.linalg.norm(T_delta))
-        if(np.linalg.norm(T_delta) >= self.eterm):
-            # Compose message
-            msg = Float64MultiArray()
-            msg.data = T_delta
-            #self.get_logger().info('Publishing: "%s"' % msg.data)
-            self.publisher_.publish(msg)
+        if(np.linalg.norm(T_delta) < self.eterm):
+            stop_msg = Bool() 
+            #self.publisher_stop.publish(stop_msg)
+            self.get_logger().info('Stopping the controller...')
+            sys.exit()
+            #rclpy.shutdown()
+            
+        # Compose message
+        msg = Float64MultiArray()
+        msg.data = T_delta
+        #self.get_logger().info('Publishing: "%s"' % msg.data)
+        self.publisher_.publish(msg)
 
 def main(args = None):
     rclpy.init(args=args) # initialize the ROS2 client library
