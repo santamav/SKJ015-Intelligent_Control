@@ -9,6 +9,7 @@ setup.py
 ../../build/pbvs/pbvs.egg-info/requires.txt
 ../../build/pbvs/pbvs.egg-info/top_level.txt
 ../../build/pbvs/pbvs.egg-info/zip-safe
+launch/pbvs.launch.py
 pbvs/__init__.py
 pbvs/actuator.py
 pbvs/controller.py

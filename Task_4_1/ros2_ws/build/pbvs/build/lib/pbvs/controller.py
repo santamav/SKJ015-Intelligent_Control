@@ -34,15 +34,17 @@ class Controller(Node):
         
         # Compute the new delta
         Te_C_G = SE3(data)
-        T_delta = Te_C_G * self.pose_d.inv()
+        T_delta = Te_C_G * self.pose_d.inv()        
         T_delta = T_delta.A.flatten().tolist()
+        #self.get_logger().info('Final pos: \n %s' %self.pose_d.A)
         
-                # Check if the error is less than the threshold
+        # Check if the error is less than the threshold
+        self.get_logger().info('Norm: %s' % np.linalg.norm(T_delta))
         if(np.linalg.norm(T_delta) >= self.eterm):
             # Compose message
             msg = Float64MultiArray()
             msg.data = T_delta
-            self.get_logger().info('Publishing: "%s"' % msg.data)
+            #self.get_logger().info('Publishing: "%s"' % msg.data)
             self.publisher_.publish(msg)
 
 def main(args = None):

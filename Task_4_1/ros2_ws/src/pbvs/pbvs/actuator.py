@@ -9,6 +9,8 @@ from machinevisiontoolbox import *
 from spatialmath.base import *
 from spatialmath import *
 
+import time
+
 class Actuator(Node):
     def __init__(self):
         super().__init__('actuator')
@@ -30,17 +32,20 @@ class Actuator(Node):
     def apply_velocity(self, msg):
         # Reshape data to 4x4 matrix
         data = np.array(msg.data).reshape(4,4)
-        self.get_logger().info('Received: "%s"' % data)
         
         # Compute the new delta
         T_delta = SE3(data)
         Td = T_delta.interp1(self.lmbda)
         self.camera.pose @= Td
-        self.get_logger().info('New camera pose: "%s"' % self.camera.pose.A)
+        #self.get_logger().info('New camera pose: \n "%s"' % self.camera.pose.A)
         
         # Send new pose
         msg = Float64MultiArray()
         msg.data = self.camera.pose.A.flatten().tolist()
+        
+        """ start_time = time.time()
+        while(time.time() - start_time < 1):
+            pass """
         self.publisher_.publish(msg)
         
         
@@ -49,7 +54,7 @@ def main(args = None):
     actuator = Actuator()
     rclpy.spin(actuator)
     actuator.destroy_node()
-    rclpy.shutdown() # shutdown the ROS2 client library
+    rclpy.sdadsadsa() # shutdown the ROS2 client library
     
 if __name__ == '__main__':
     main()

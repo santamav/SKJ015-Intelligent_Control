@@ -9,6 +9,8 @@ from machinevisiontoolbox import *
 from spatialmath.base import *
 from spatialmath import *
 
+import time
+
 class FeatureExtractor(Node):
     def __init__(self):
         super().__init__('feature_extractor')
@@ -26,6 +28,10 @@ class FeatureExtractor(Node):
             10
         )
         
+        start_time = time.time()
+        while time.time() - start_time < 1:
+            pass
+        
         # First call
         self.compute_pose()
         
@@ -41,12 +47,12 @@ class FeatureExtractor(Node):
         msg = Float64MultiArray()
         msg.data = Te_C_G
         self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.data)
+        #self.get_logger().info('Publishing: "%s"' % msg.data)
         
     def update_camera_pose(self, msg):
         # Reshape data to 4x4 matrix
         data = np.array(msg.data).reshape(4,4)
-        self.get_logger().info('Received: "%s"' % data)
+        #self.get_logger().info('Received: "%s"' % data)
         # Apply new pose to the camera
         self.camera.pose = SE3(data)
         # Call the compute pose function
