@@ -17,6 +17,8 @@ class Actuator(Node):
         
         self.camera = CentralCamera.Default(pose = SE3.Trans(1, 1, -2))
         self.lmbda = 0.05
+        # Init history
+        self.c_pose_history = []
         
         # Prepare publisher
         self.publisher_ = self.create_publisher(Float64MultiArray, 'camera_pose', 10)
@@ -44,6 +46,10 @@ class Actuator(Node):
         T_delta = SE3(data)
         Td = T_delta.interp1(self.lmbda)
         self.camera.pose @= Td
+        # Store new camera pose
+        self.c_pose_history.append(self.camera.pose.A)
+        # Save history to file
+        np.save('/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/outputs/c_pose_history.npy', self.c_pose_history)
         #self.get_logger().info('New camera pose: \n "%s"' % self.camera.pose.A)
         
         # Send new pose
@@ -64,7 +70,7 @@ def main(args = None):
     actuator = Actuator()
     rclpy.spin(actuator)
     actuator.destroy_node()
-    rclpy.sdadsadsa() # shutdown the ROS2 client library
+    rclpy.shutdown() # shutdown the ROS2 client library
     
 if __name__ == '__main__':
     main()

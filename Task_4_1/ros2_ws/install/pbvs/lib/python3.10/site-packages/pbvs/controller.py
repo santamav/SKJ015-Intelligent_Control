@@ -28,6 +28,8 @@ class Controller(Node):
             10
         )
         
+        self.vel_history = []
+        
         # Prepare the publisher
         self.publisher_ = self.create_publisher(Float64MultiArray, 'delta', 10)
         self.publisher_stop = self.create_publisher(Bool, 'stop', 10)
@@ -39,7 +41,10 @@ class Controller(Node):
         
         # Compute the new delta
         Te_C_G = SE3(data)
-        T_delta = Te_C_G * self.pose_d.inv()        
+        T_delta = Te_C_G * self.pose_d.inv()   
+        # Store tdelta history
+        self.vel_history.append(T_delta.A)
+        np.save('/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/outputs/vel_history.npy', self.vel_history)             
         T_delta = T_delta.A.flatten().tolist()
         #self.get_logger().info('Final pos: \n %s' %self.pose_d.A)
         
@@ -47,10 +52,9 @@ class Controller(Node):
         self.get_logger().info('Norm: %s' % np.linalg.norm(T_delta))
         if(np.linalg.norm(T_delta) < self.eterm):
             stop_msg = Bool() 
-            #self.publisher_stop.publish(stop_msg)
+            self.publisher_stop.publish(stop_msg)
             self.get_logger().info('Stopping the controller...')
             sys.exit()
-            #rclpy.shutdown()
             
         # Compose message
         msg = Float64MultiArray()

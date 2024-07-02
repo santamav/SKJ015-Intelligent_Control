@@ -36,6 +36,10 @@ class FeatureExtractor(Node):
             10
         )
         
+        # Initialize history
+        self.uv_history = []
+        
+        # Wait for the rest of the nodes to listen
         start_time = time.time()
         while time.time() - start_time < 1:
             pass
@@ -47,6 +51,9 @@ class FeatureExtractor(Node):
     def compute_pose(self):
         # Compute pose
         self.uv = self.camera.project_point(self.P, objpose=self.pose_g)
+        # Store uv history
+        self.uv_history.append(self.uv)
+        np.save('/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/outputs/uv_history.npy', self.uv_history)
         # Estimate the camera pose
         Te_C_G = self.camera.estpose(self.P, self.uv, frame="camera") 
         # convert to numpy array, flatten and then to a list
