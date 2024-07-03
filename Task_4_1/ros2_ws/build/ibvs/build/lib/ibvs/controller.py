@@ -22,6 +22,8 @@ class Controller(Node):
         self.camera = CentralCamera.Default(pose=SE3.Trans(1, 1, -3) * SE3.Rz(0.6));
         self.p_star = 200 * np.array([[-1, -1, 1, 1], [-1, 1, 1, -1]]) + np.c_[self.camera.pp]
         
+        self.v_history = []
+        
         # Prepare subscriber
         self.subscription = self.create_subscription(
             Float64MultiArray,
@@ -53,6 +55,10 @@ class Controller(Node):
             v = -self.lmbda * np.linalg.pinv(self.J) @ self.e
         except np.linalg.LinAlgError:
             sys.exit()
+        
+        # Store v in file
+        self.v_history.append(v)
+        np.save('/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/outputs/IBVS/v.npy', self.v_history)
         
         # Compose message
         msg = Float64MultiArray()

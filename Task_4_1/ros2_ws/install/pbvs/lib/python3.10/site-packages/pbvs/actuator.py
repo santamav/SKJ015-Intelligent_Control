@@ -49,7 +49,7 @@ class Actuator(Node):
         # Store new camera pose
         self.c_pose_history.append(self.camera.pose.A)
         # Save history to file
-        np.save('/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/outputs/c_pose_history.npy', self.c_pose_history)
+        np.save('/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/outputs/PBVS/c_pose_history.npy', self.c_pose_history)
         #self.get_logger().info('New camera pose: \n "%s"' % self.camera.pose.A)
         
         # Send new pose

@@ -44,7 +44,7 @@ class Controller(Node):
         T_delta = Te_C_G * self.pose_d.inv()   
         # Store tdelta history
         self.vel_history.append(T_delta.A)
-        np.save('/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/outputs/vel_history.npy', self.vel_history)             
+        np.save('/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/outputs/PBVS/vel_history.npy', self.vel_history)             
         T_delta = T_delta.A.flatten().tolist()
         #self.get_logger().info('Final pos: \n %s' %self.pose_d.A)
         

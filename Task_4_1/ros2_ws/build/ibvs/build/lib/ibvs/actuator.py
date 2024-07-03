@@ -21,6 +21,8 @@ class Actuator(Node):
         # Prepare publisher
         self.publisher_ = self.create_publisher(Float64MultiArray, 'camera_pose', 10)
         
+        self.c_pose_history = []
+        
         # Prepare subscriber
         self.subscription = self.create_subscription(
             Float64MultiArray,
@@ -35,6 +37,11 @@ class Actuator(Node):
         
         self.Td = SE3.Delta(data)
         self.camera.pose @= self.Td
+        
+        # Store new camera pose
+        self.c_pose_history.append(self.camera.pose.A)
+        # Save history to file
+        np.save('/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/outputs/IBVS/c_pose_history.npy', self.c_pose_history)
         
         # Send new pose
         msg = Float64MultiArray()

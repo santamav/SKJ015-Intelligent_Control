@@ -30,6 +30,8 @@ class FeatureExtractor(Node):
             10
         )
         
+        self.uv_history = []
+        
         # Wait for the rest of the nodes to start listening
         start_time = time.time()
         while time.time() - start_time < 1:
@@ -42,7 +44,9 @@ class FeatureExtractor(Node):
     def compute_pose(self):
         # Compute pose
         uv = self.camera.project_point(self.P)
-        # TODO: Store uv in file#
+        # Store uv in file
+        self.uv_history.append(uv)
+        np.save('/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/outputs/IBVS/uv.npy', self.uv_history)
         # Compose message
         msg = Float64MultiArray()
         msg.data = uv.flatten().tolist()

@@ -53,7 +53,7 @@ class FeatureExtractor(Node):
         self.uv = self.camera.project_point(self.P, objpose=self.pose_g)
         # Store uv history
         self.uv_history.append(self.uv)
-        np.save('/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/outputs/uv_history.npy', self.uv_history)
+        np.save('/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/outputs/PBVS/uv_history.npy', self.uv_history)
         # Estimate the camera pose
         Te_C_G = self.camera.estpose(self.P, self.uv, frame="camera") 
         # convert to numpy array, flatten and then to a list
