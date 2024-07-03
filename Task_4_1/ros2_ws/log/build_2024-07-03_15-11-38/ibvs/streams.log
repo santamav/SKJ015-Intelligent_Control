@@ -1,0 +1,34 @@
+[0.795s] Invoking command in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/ibvs': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ibvs build --build-base /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/build install --record /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/install.log --single-version-externally-managed install_data
+[1.010s] running egg_info
+[1.010s] creating ../../build/ibvs/ibvs.egg-info
+[1.011s] writing ../../build/ibvs/ibvs.egg-info/PKG-INFO
+[1.011s] writing dependency_links to ../../build/ibvs/ibvs.egg-info/dependency_links.txt
+[1.011s] writing entry points to ../../build/ibvs/ibvs.egg-info/entry_points.txt
+[1.011s] writing requirements to ../../build/ibvs/ibvs.egg-info/requires.txt
+[1.012s] writing top-level names to ../../build/ibvs/ibvs.egg-info/top_level.txt
+[1.012s] writing manifest file '../../build/ibvs/ibvs.egg-info/SOURCES.txt'
+[1.012s] reading manifest file '../../build/ibvs/ibvs.egg-info/SOURCES.txt'
+[1.012s] adding license file 'LICENSE'
+[1.012s] writing manifest file '../../build/ibvs/ibvs.egg-info/SOURCES.txt'
+[1.013s] running build
+[1.013s] running build_py
+[1.013s] creating /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/build
+[1.013s] creating /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/build/lib
+[1.013s] creating /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/build/lib/ibvs
+[1.014s] copying ibvs/__init__.py -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/build/lib/ibvs
+[1.014s] running install
+[1.014s] running install_lib
+[1.014s] creating /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/lib/python3.10/site-packages/ibvs
+[1.014s] copying /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/build/lib/ibvs/__init__.py -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/lib/python3.10/site-packages/ibvs
+[1.014s] byte-compiling /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/lib/python3.10/site-packages/ibvs/__init__.py to __init__.cpython-310.pyc
+[1.015s] running install_data
+[1.015s] creating /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/ament_index
+[1.015s] creating /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/ament_index/resource_index
+[1.015s] creating /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/ament_index/resource_index/packages
+[1.015s] copying resource/ibvs -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/ament_index/resource_index/packages
+[1.015s] copying package.xml -> /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/ibvs
+[1.016s] running install_egg_info
+[1.016s] Copying ../../build/ibvs/ibvs.egg-info to /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/lib/python3.10/site-packages/ibvs-0.0.0-py3.10.egg-info
+[1.017s] running install_scripts
+[1.032s] writing list of installed files to '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/install.log'
+[1.049s] Invoked command in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/ibvs' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ibvs build --build-base /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/build install --record /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/install.log --single-version-externally-managed install_data

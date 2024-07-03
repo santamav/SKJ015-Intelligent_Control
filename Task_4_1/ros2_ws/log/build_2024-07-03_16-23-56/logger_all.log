@@ -1,0 +1,186 @@
+[0.102s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.102s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x73e85c033790>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73e85c033100>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73e85c033100>>, mixin_verb=('build',))
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.230s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extension 'ros'
+[0.242s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ibvs' with type 'ros.ament_python' and name 'ibvs'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbvs) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbvs) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbvs) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbvs) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbvs) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbvs) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbvs) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbvs) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbvs) by extension 'ros'
+[0.243s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pbvs' with type 'ros.ament_python' and name 'pbvs'
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.266s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install
+[0.267s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[0.268s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'cmake_target' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'cmake_clean_first' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'cmake_force_configure' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'ament_cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.293s] DEBUG:colcon.colcon_core.verb:Building package 'ibvs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs', 'merge_install': False, 'path': '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/ibvs', 'symlink_install': False, 'test_result_base': None}
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'pbvs' build argument 'cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'pbvs' build argument 'cmake_target' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'pbvs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'pbvs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'pbvs' build argument 'cmake_clean_first' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'pbvs' build argument 'cmake_force_configure' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'pbvs' build argument 'ament_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'pbvs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'pbvs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.294s] DEBUG:colcon.colcon_core.verb:Building package 'pbvs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs', 'merge_install': False, 'path': '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/pbvs', 'symlink_install': False, 'test_result_base': None}
+[0.294s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.295s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.295s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/ibvs' with build type 'ament_python'
+[0.295s] Level 1:colcon.colcon_core.shell:create_environment_hook('ibvs', 'ament_prefix_path')
+[0.297s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.297s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/ibvs/hook/ament_prefix_path.ps1'
+[0.297s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/ibvs/hook/ament_prefix_path.dsv'
+[0.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/ibvs/hook/ament_prefix_path.sh'
+[0.299s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.299s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.301s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/pbvs' with build type 'ament_python'
+[0.302s] Level 1:colcon.colcon_core.shell:create_environment_hook('pbvs', 'ament_prefix_path')
+[0.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/share/pbvs/hook/ament_prefix_path.ps1'
+[0.302s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/share/pbvs/hook/ament_prefix_path.dsv'
+[0.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/share/pbvs/hook/ament_prefix_path.sh'
+[0.303s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.303s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.520s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/ibvs'
+[0.521s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.521s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.743s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/pbvs'
+[0.744s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.744s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.037s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/pbvs': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pbvs build --build-base /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/build install --record /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/install.log --single-version-externally-managed install_data
+[1.125s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/ibvs': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ibvs build --build-base /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/build install --record /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/install.log --single-version-externally-managed install_data
+[1.290s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/pbvs' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pbvs build --build-base /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/build install --record /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/pbvs/install.log --single-version-externally-managed install_data
+[1.292s] Level 1:colcon.colcon_core.environment:checking '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs' for CMake module files
+[1.292s] Level 1:colcon.colcon_core.environment:checking '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs' for CMake config files
+[1.293s] Level 1:colcon.colcon_core.environment:checking '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib'
+[1.293s] Level 1:colcon.colcon_core.environment:checking '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/bin'
+[1.293s] Level 1:colcon.colcon_core.environment:checking '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/pkgconfig/pbvs.pc'
+[1.293s] Level 1:colcon.colcon_core.environment:checking '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/lib/python3.10/site-packages'
+[1.293s] Level 1:colcon.colcon_core.shell:create_environment_hook('pbvs', 'pythonpath')
+[1.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/share/pbvs/hook/pythonpath.ps1'
+[1.294s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/share/pbvs/hook/pythonpath.dsv'
+[1.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/share/pbvs/hook/pythonpath.sh'
+[1.295s] Level 1:colcon.colcon_core.environment:checking '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/bin'
+[1.295s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pbvs)
+[1.295s] INFO:colcon.colcon_core.shell:Creating package script '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/share/pbvs/package.ps1'
+[1.296s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/share/pbvs/package.dsv'
+[1.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/share/pbvs/package.sh'
+[1.297s] INFO:colcon.colcon_core.shell:Creating package script '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/share/pbvs/package.bash'
+[1.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/share/pbvs/package.zsh'
+[1.298s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/pbvs/share/colcon-core/packages/pbvs)
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs' for CMake module files
+[1.404s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/src/ibvs' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ibvs build --build-base /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/build install --record /home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/build/ibvs/install.log --single-version-externally-managed install_data
+[1.405s] Level 1:colcon.colcon_core.environment:checking '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs' for CMake config files
+[1.405s] Level 1:colcon.colcon_core.environment:checking '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/lib'
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/bin'
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/lib/pkgconfig/ibvs.pc'
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/lib/python3.10/site-packages'
+[1.407s] Level 1:colcon.colcon_core.shell:create_environment_hook('ibvs', 'pythonpath')
+[1.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/ibvs/hook/pythonpath.ps1'
+[1.408s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/ibvs/hook/pythonpath.dsv'
+[1.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/ibvs/hook/pythonpath.sh'
+[1.409s] Level 1:colcon.colcon_core.environment:checking '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/bin'
+[1.410s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ibvs)
+[1.410s] INFO:colcon.colcon_core.shell:Creating package script '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/ibvs/package.ps1'
+[1.411s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/ibvs/package.dsv'
+[1.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/ibvs/package.sh'
+[1.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/ibvs/package.bash'
+[1.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/ibvs/package.zsh'
+[1.413s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/ibvs/share/colcon-core/packages/ibvs)
+[1.413s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.414s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.414s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.414s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.420s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.420s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.420s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.438s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.438s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/local_setup.ps1'
+[1.439s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/_local_setup_util_ps1.py'
+[1.440s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/setup.ps1'
+[1.442s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/local_setup.sh'
+[1.443s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/_local_setup_util_sh.py'
+[1.443s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/setup.sh'
+[1.445s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/local_setup.bash'
+[1.446s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/setup.bash'
+[1.447s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/local_setup.zsh'
+[1.447s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/ros2_ws/install/setup.zsh'

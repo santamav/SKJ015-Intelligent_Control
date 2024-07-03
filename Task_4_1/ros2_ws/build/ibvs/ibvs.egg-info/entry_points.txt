@@ -1,0 +1,5 @@
+[console_scripts]
+actuator = ibvs.actuator:main
+controller = ibvs.controller:main
+feature_extractor = ibvs.feature_extractor:main
+
