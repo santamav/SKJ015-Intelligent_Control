@@ -46,13 +46,13 @@ class FeatureExtractor(Node):
         uv = self.camera.project_point(self.P)
         # Store uv in file
         self.uv_history.append(uv)
-        np.save('/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/outputs/IBVS/uv.npy', self.uv_history)
+        np.save('/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/outputs/IBVS/uv.npy', np.array(self.uv_history))
         # Compose message
         msg = Float64MultiArray()
         msg.data = uv.flatten().tolist()
         # Publish message
         self.publisher_.publish(msg)
-        self.get_logger().info('Publishing uv: "%s"' % msg.data)
+        #self.get_logger().info('Publishing uv: "%s"' % msg.data)
         
     def update_camera_pose(self, msg):
         # Recompose data to 4x4 matrix

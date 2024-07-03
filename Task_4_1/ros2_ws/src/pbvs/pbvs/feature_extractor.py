@@ -81,9 +81,6 @@ class FeatureExtractor(Node):
 def main(args = None):
     rclpy.init(args=args) # initialize the ROS2 client library
     feature_extractor = FeatureExtractor()
-    rclpy.spin(feature_extractor)
-    feature_extractor.destroy_node()
-    rclpy.shutdown() # shutdown the ROS2 client library
-
+    rclpy.spin(feature_extractor) 
 if __name__ == '__main__':
     main()

@@ -17,7 +17,7 @@ class Controller(Node):
     def __init__(self):
         super().__init__('controller')
         self.lmbda = 0.05
-        self.eterm = 0
+        self.eterm = 0.001
         self.depth = 1
         self.camera = CentralCamera.Default(pose=SE3.Trans(1, 1, -3) * SE3.Rz(0.6));
         self.p_star = 200 * np.array([[-1, -1, 1, 1], [-1, 1, 1, -1]]) + np.c_[self.camera.pp]
@@ -45,7 +45,7 @@ class Controller(Node):
     def compute_verlocity(self, msg):
         # Reshape uv data to 2x2 matrix
         uv = np.array(msg.data).reshape(2, 4)
-        self.get_logger().info('Received uv: "%s"' % uv)
+        #self.get_logger().info('Received uv: "%s"' % uv)
         # Compute velocity
         self.e = uv - self.p_star
         self.e = self.e.flatten('F')
@@ -60,12 +60,18 @@ class Controller(Node):
         self.v_history.append(v)
         np.save('/home/sjk015/Documents/SKJ015-Intelligent_Control/Task_4_1/outputs/IBVS/v.npy', self.v_history)
         
+        if(np.linalg.norm(v) < self.eterm):
+            sys.exit()
+        
+        if(np.linalg.norm(v) > 0.5):
+            v = smbase.unitvec(v) * 0.5
+        
         # Compose message
         msg = Float64MultiArray()
         msg.data = v.flatten().tolist()
         # Publish message
         self.publisher_.publish(msg)
-        self.get_logger().info('Publishing v: "%s"' % msg.data)
+        #self.get_logger().info('Publishing v: "%s"' % msg.data)
         
     def update_camera(self, msg):
         # Recompose data to 4x4 matrix
