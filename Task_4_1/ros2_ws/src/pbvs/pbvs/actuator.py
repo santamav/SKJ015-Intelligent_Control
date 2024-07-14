@@ -56,9 +56,6 @@ class Actuator(Node):
         msg = Float64MultiArray()
         msg.data = self.camera.pose.A.flatten().tolist()
         
-        """ start_time = time.time()
-        while(time.time() - start_time < 1):
-            pass """
         self.publisher_.publish(msg)
     
     def stop(self, msg):
