@@ -36,12 +36,8 @@ class VSM_IBVS(VisualServo):
         self.depth = depth
         self.depthtest = depthtest
         self.vmax = vmax
-        self.smoothstart = smoothstart
+        self.smoothstart = smoothstart        
         
-        # Init variables history
-        self.uv_hist = []
-        self.p_start_hist = [] 
-        self.v_hist = []
         
     def init(self):
         """
@@ -64,6 +60,8 @@ class VSM_IBVS(VisualServo):
         hist = self._history()
         
         v = self.controller.compute_velocity(uv, self.featureextractor.p_star)
+        hist.v = v
+
         if v is None:
             return -1
 
@@ -80,11 +78,8 @@ class VSM_IBVS(VisualServo):
         hist.e = self.controller.e
         hist.enorm = np.linalg.norm(self.controller.e)
         hist.jcond = np.linalg.cond(self.controller.J)
-        hist.pose = self.camera.pose
-        
-        self.uv_hist.append(uv)
-        self.p_start_hist.append(self.featureextractor.p_star)
-        self.v_hist.append(vel)
+        hist.pose = self.camera.pose   
+        hist.J = self.controller.J 
 
         self.history.append(hist)
 
@@ -117,6 +112,7 @@ class IBVS_Controller:
         self.e = self.e.flatten('F')
         self.J = self.camera.visjac_p(uv, self.depth)
         
+        # We are testing the uv only model
         try:
             v = -self.lmbda * np.linalg.pinv(self.J) @ self.e
         except np.linalg.LinAlgError:
