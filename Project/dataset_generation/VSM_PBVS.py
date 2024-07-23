@@ -48,6 +48,60 @@ class VSM_PBVS(VisualServo):
             status = 1
         
         return status
+    
+    def plot_p(self):
+        """
+        Plot feature trajectory from simulation
+
+        Show image feature points versus time.
+
+        :seealso: :meth:`plot_vel` :meth:`self.plot_pose` :meth:`plot_jcond` :meth:`plot_z` :meth:`plot_error`
+        """
+
+        if len(self.history) == 0:
+            return
+
+        if self.type != "point":
+            print("Can only plot image plane trajectories for point-based IBVS")
+            return
+
+        # result is a vector with row per time step, each row is u1, v1, u2, v2 ...
+        for i in range(self.npoints):
+            u = [h.p[0, i] for h in self.history]  # get data for i'th point
+            v = [h.p[1, i] for h in self.history]
+            plt.plot(u, v, "b")
+
+        # mark the initial target shape
+        smbase.plot_polygon(
+            self.history[0].p,
+            "o--",
+            close=True,
+            markeredgecolor="k",
+            markerfacecolor="w",
+            label="initial",
+        )
+
+        # mark the goal target shape
+        if isinstance(self, IBVS):
+            smbase.plot_polygon(
+                self.p_star,
+                "k*:",
+                close=True,
+                markeredgecolor="k",
+                markerfacecolor="k",
+                label="goal",
+            )
+
+        if isinstance(self, VSM_PBVS):
+            p = self.camera.project_point(self.P, pose=self.pose_d.inv())
+            smbase.plot_polygon(
+                p,
+                "k*:",
+                close=True,
+                markeredgecolor="k",
+                markerfacecolor="k",
+                label="goal",
+            )
 
 # PBVS Feature Extractor module
 class PBVS_FeatureExtractor:

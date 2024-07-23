@@ -15,6 +15,8 @@ from spatialmath.base import *
 from spatialmath import *
 import tensorflow as tf
 
+from scipy.spatial.transform import Rotation as R
+
 # Main clas for the PBVS simulation
 class VSM_PBVS(VisualServo):
     def __init__(self, camera, eterm=1e-3, lmbda=0.5, **kwargs):
@@ -142,15 +144,39 @@ class PBVS_Controller:
         self.model = tf.keras.models.load_model('../model_creation/models/uv_pstar.keras')
 
     def compute_TDelta(self, Te_C_G, pose_d):
-        #T_delta = Te_C_G * pose_d.inv()
-        # Transform input data
-        uv = Te_C_G.A
-        input = np.array([uv[0,3], uv[1,3], uv[2,3]])
-        output = self.model.predict(input.reshape(1,3))
+        # Extract translation components
+        translation_input = [Te_C_G.A[0, 3], Te_C_G.A[1, 3], Te_C_G.A[2, 3]]
+        # Extract rotation components as Euler angles
+        rotation_input = R.from_matrix(Te_C_G.A[:3, :3]).as_euler('xyz')
         
-        # Create a new SE3 object
-        T_delta = SE3(output[0,0], output[0,1], output[0,2])
-        return T_delta  
+        # Combine translation and rotation into a single input array
+        input = np.array(translation_input + list(rotation_input))
+
+        # Predict output (translation and rotation)
+        output = self.model.predict(input.reshape(1, 6))
+        
+        # Extract predicted translation and rotation from the output
+        predicted_translation = output[0, :3]
+        predicted_rotation = output[0, 3:]
+        
+        # Convert predicted rotation to a rotation matrix
+        predicted_rotation_matrix = R.from_euler('xyz', predicted_rotation).as_matrix()
+        
+        # Ensure the translation is in the correct format
+        predicted_translation = np.array(predicted_translation)
+        
+        # Ensure the rotation matrix is in the correct format
+        predicted_rotation_matrix = np.array(predicted_rotation_matrix)
+
+        # Step 1: Combine into a 4x4 homogeneous transformation matrix
+        homogeneous_matrix = np.eye(4)  # Create a 4x4 identity matrix
+        homogeneous_matrix[:3, :3] = predicted_rotation_matrix  # Set the top-left 3x3 block to the rotation matrix
+        homogeneous_matrix[:3, 3] = predicted_translation  # Set the top-right 3x1 block to the translation vector
+        
+        # Step 2: Pass this matrix to the SE3 constructor
+        T_delta = SE3(homogeneous_matrix)
+        
+        return T_delta 
     
 # PBVS Actuator module
 class PBVS_Actuator:
